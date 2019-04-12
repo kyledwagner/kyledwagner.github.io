@@ -1,0 +1,23 @@
+{
+  "name": "kyledwagner.github.io",
+  "version": "1.0.0",
+  "description": "This is a test of Github, Working Copy, Pythonista and more as I begin my journey into code.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyledwagner/kyledwagner.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kyledwagner/kyledwagner.github.io/issues"
+  },
+  "homepage": "https://github.com/kyledwagner/kyledwagner.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^0.7.4"
+  }
+}
