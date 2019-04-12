@@ -1,2 +1,2 @@
 # kyledwagner.github.io
-This is a test of Github, Working Copy, Pythonista and more as I begin my journey into code.
+This is a portfolio website that showcases my designs and websites that were coded for clients.
