@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kyledwagner/kyledwagner.github.io#readme",
   "devDependencies": {
     "tailwindcss": "^0.7.4"
+  },
+  "dependencies": {
+    "jquery": "^3.4.0"
   }
 }
