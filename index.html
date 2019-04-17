@@ -10,12 +10,13 @@
         <meta name="description" content="I code websites and design digital advertisements.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
     </head>
     <body>
         <!-- Top Nav -->
         <nav class="flex items-center justify-between flex-wrap p-4 lg:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
-              <span class="antianilised font-thin text-3xl text-gray-900">Kyle David Wagner</span>
+              <span class="antianilised font-thin text-3xl lg:text-4xl text-gray-900">Kyle David Wagner</span>
             </div>
             <div class="block lg:hidden">
               <button class="flex items-center px-3 py-2 border rounded text-gray-900 border-gray-900 hover:text-white hover:border-white hover:bg-gray-900">
@@ -45,6 +46,9 @@
                 </div>
             </div>
           </nav>
+
+          <!-- Divider -->
+          <hr class="mx-4 lg:mx-8">
 
           <!-- Work Grid Main -->
           <div class="p-4 lg:p-8">
@@ -183,7 +187,7 @@
         <script src="assets/js/jquery.min.js" async></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script>
-        ScrollReveal().reveal('.null');
+        ScrollReveal().reveal('.shadow-lg', { duration: 1750 });
         </script>
     </body>
 </html>
