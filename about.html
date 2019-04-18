@@ -11,15 +11,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
         <link href="assets/css/main.css" rel="stylesheet">
-        <link rel="stylesheet" href="assets/css/animsition.min.css">
         <script src="https://unpkg.com/scrollreveal"></script>
     </head>
     <body>
-    <div class="animsition">
+
         <!-- Top Nav -->
         <nav class="flex items-center justify-between flex-wrap p-4 lg:p-8">
           <div class="flex items-center flex-shrink-0 mr-6">
-            <div class="Logo"><a href="index.html" class="animsition-link"><span class="antianilised font-medium text-3xl lg:text-4xl text-gray-900 hover:text-gray-800">Kyle&nbsp;Wagner.</span></a></div>
+            <div class="Logo"><a href="index.html"><span class="antianilised font-medium text-3xl lg:text-4xl text-gray-900 hover:text-gray-800">Kyle&nbsp;Wagner.</span></a></div>
           </div>
           <div class="block lg:hidden">
             <button class="flex items-center px-3 py-2 border rounded text-gray-900 border-gray-900 hover:text-white hover:border-white hover:bg-gray-900">
@@ -45,7 +44,7 @@
               </a>
             </div>
             <div class="Nav pl-2">
-                <a href="/about.html" class="animsition-link inline-block font-medium text-sm px-4 py-2 leading-none border-2 rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 lg:mt-0">About Me</a>
+                <a href="/about.html" class="inline-block font-medium text-sm px-4 py-2 leading-none border-2 rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 lg:mt-0">About Me</a>
               </div>
           </div>
         </nav>
@@ -71,37 +70,10 @@
                 <p class="Reveal inline-block float-right antianilised font-thin text-sm text-gray-900">Made with <a href="https://next.tailwindcss.com/" target="_blank" class="font-medium hover:underline">TailwindCSS</a> & <a href="https://scrollrevealjs.org/" target="_blank" class="font-medium hover:underline">ScrollReveal</a>.</p>
                 </div>
             </div>
-      </div>
+
         <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/animsition.min.js"></script>
         <script>
         ScrollReveal().reveal('.Logo, .Line, .Social, .Nav, .Reveal', { duration: 1000, interval: 14, reset: false, mobile: true });
         </script>
-        <script>
-        $(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
-});
-    </script>
     </body>
 </html>
