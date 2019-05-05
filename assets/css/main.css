@@ -1,6 +1,5 @@
 /* Main CSS for My Website */
 
-hr {
-    height: 2px;
-    background: #1A202C;
+body {
+ background-color: #f5f5f5;
 }
