@@ -12,10 +12,11 @@
 
   <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-200 font-sans">
     <div class="h-screen flex items-center" id="app">
         <!-- Top Nav -->
         <nav class="absolute top-0 left-0 right-0 flex items-center justify-between flex-wrap p-4 lg:p-8">
@@ -50,33 +51,33 @@
     <div class="p-4 lg:p-8">
     <div class="flex flex-wrap -mx-2">
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/previews/Mockup_TT_Microsite.jpg" class="w-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/full/MNC_Mockup.jpg" class="object-cover w-full h-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/previews/Mockup_TT_Microsite.jpg" class="w-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/full/MNC_Mockup.jpg" class="object-cover w-full h-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/previews/Mockup_TT_Microsite.jpg" class="w-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
         <div class="w-full sm:w-1/2 p-2 xl:p-4">
-          <div class="h-full shadow-lg">
-            <img src="assets/images/DXP_Infographic_191017.jpg" class="w-full" alt="BIKING-LAOS Logotype">
+          <div class="h-full shadow-lg grid-overlay">
+            <img src="assets/images/full/MNC_Mockup.jpg" class="object-cover w-full h-full" alt="BIKING-LAOS Logotype">
           </div>
         </div>
     </div>
@@ -102,6 +103,10 @@
 
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script>
+    <script>
+    const element =  document.querySelector('.logo')
+element.classList.add('animated', 'bounceOutLeft')
+    </script>
     <script>
 new Vue({
 	el: '#app',

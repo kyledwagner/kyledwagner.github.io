@@ -1,12 +1,33 @@
 /* Main CSS for My Website */
+
 .gradient-bloody-mimosa {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
+/* Prevents flickering for Scrollreveal animations during page loading */
 html.sr .load-hidden {
   visibility: hidden;
 }
 
+.grid-overlay img {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+  transition: filter 250ms ease;
+  -webkit-transition: -webkit-filter 250ms ease-in-out;
+}
+
+.grid-overlay img:hover {
+  filter: brightness(75%);
+  -webkit-filter: brightness(75%);
+
+}
+
+/* Removes Blue Outline on Button Clicks */
+button:focus {
+  outline: none;
+}
+
+/* Super cool gradient animation for my CTA */
 .text-6xl {
     background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
     -webkit-background-clip: text;
@@ -14,7 +35,6 @@ html.sr .load-hidden {
     background-size: 1800% 1800%;
     animation: anim-bg-grad 60s ease infinite;
 }
-
 @keyframes anim-bg-grad {
     0% {
       background-position: 0% 50%
