@@ -4,14 +4,11 @@
 }
 
 .text-6xl {
-    background: -webkit-linear-gradient(120deg, #d53369 0%, #daae51 100%);
+    background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-/* .bg-gradient {
-    background: linear-gradient(45deg, #00ff4e, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #00ff4e, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
     background-size: 1800% 1800%;
-    animation: anim-bg-grad 20s ease infinite;
+    animation: anim-bg-grad 60s ease infinite;
 }
 
 @keyframes anim-bg-grad {
@@ -24,4 +21,4 @@
     100% {
       background-position: 0% 50%
     }
-  } */
+  }
