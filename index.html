@@ -11,7 +11,7 @@
   <meta name="author" content="Kyle David Wagner">
 
   <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
-  <!-- <link href="assets/css/main.css" rel="stylesheet"> -->
+  <link href="assets/css/main.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -30,13 +30,13 @@
             <div :class="open ? 'block': 'hidden'" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
               <div class="text-sm lg:flex-grow ml-4">
               </div>
-              <div class="pl-2">
+              <div class="Nav pl-2">
                 <a href="/about.html" class="inline-block font-medium text-sm px-4 py-2 leading-none text-gray-900 hover:underline mt-4 lg:mt-0">About</a>
               </div>
-              <div class="pr-2">
+              <div class="Nav pr-2">
                 <a href="/work.html" class="inline-block font-medium text-sm px-4 py-2 leading-none text-gray-900 hover:underline mt-4 lg:mt-0">Work</a>
               </div>
-              <div class="pl-2">
+              <div class="Nav pl-2">
                   <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-sm px-4 py-2 leading-none border-2 rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 lg:mt-0">Resume</a>
               </div>
             </div>
@@ -88,7 +88,7 @@
           <span class="block font-thin text-md text-gray-600 tracking-widest py-1">DIGITAL MARKETING</span>
           <span class="block font-semibold text-4xl text-gray-900 py-1">Microsite Campaign</span>
           <span class="block text-md text-gray-900 py-1">Two microsites built around a marketing camapaign to promote inbound tourism to Luang Prabang.</span>
-          <div class="py-3"><button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
+          <div class="py-3"><button class="gradient-bloody-mimosa hover:shadow-lg text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
         </div>
     </div>
 
@@ -116,7 +116,8 @@ new Vue({
 })
     </script>
     <script>
-    ScrollReveal().reveal('.shadow-lg, .Social, .Nav, .Logo, .Line, .CTA', { duration: 1000, interval: 14, reset: false, mobile: true });
+    ScrollReveal().reveal('.shadow-lg, .Nav, .Logo, .CTA', { duration: 1000, interval: 14, reset: false, mobile: true });
+    ScrollReveal().reveal('.CTA', { duration: 1000, delay: 300, ease: 'ease-in-out', origin: 'bottom', distance: '25px', interval: 14, reset: false, mobile: true });
     </script>
     </body>
 </html>
