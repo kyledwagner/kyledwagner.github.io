@@ -20,7 +20,7 @@
         <!-- Top Nav -->
         <nav class="absolute top-0 left-0 right-0 flex items-center justify-between flex-wrap p-4 lg:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
-              <div class="Logo"><a href="index.html" class="animsition-link"><span class="antianilised font-medium text-2xl lg:text-4xl text-gray-900 hover:text-gray-800">Kyle&nbsp;Wagner</span></a></div>
+              <div class="Logo load-hidden"><a href="index.html"><span class="antianilised font-medium text-2xl lg:text-4xl text-gray-900 hover:text-gray-800">Kyle&nbsp;Wagner</span></a></div>
             </div>
             <div class="block lg:hidden">
               <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-gray-900 border-gray-900 hover:text-white hover:border-white hover:bg-gray-900">
@@ -30,20 +30,20 @@
             <div :class="open ? 'block': 'hidden'" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
               <div class="text-sm lg:flex-grow ml-4">
               </div>
-              <div class="Nav pl-2">
+              <div class="Nav load-hidden pl-2">
                 <a href="/about.html" class="inline-block font-medium text-sm px-4 py-2 leading-none text-gray-900 hover:underline mt-4 lg:mt-0">About</a>
               </div>
-              <div class="Nav pr-2">
+              <div class="Nav load-hidden pr-2">
                 <a href="/work.html" class="inline-block font-medium text-sm px-4 py-2 leading-none text-gray-900 hover:underline mt-4 lg:mt-0">Work</a>
               </div>
-              <div class="Nav pl-2">
+              <div class="Nav load-hidden pl-2">
                   <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-sm px-4 py-2 leading-none border-2 rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 lg:mt-0">Resume</a>
               </div>
             </div>
           </nav>
 
     <!-- Main CTA -->
-    <div class="CTA inline-block text-left text-gray-900 font-semibold text-6xl w-full md:w-2/3 leading-none p-4 lg:p-8">Kyle Wagner is a marketer who designs &amp; codes.</div>
+    <div class="CTA load-hidden inline-block text-left text-gray-900 font-semibold text-6xl w-full md:w-2/3 leading-none p-4 lg:p-8">Kyle Wagner is a marketer who designs &amp; codes.</div>
     </div>
 
     <!-- Featured Work -->

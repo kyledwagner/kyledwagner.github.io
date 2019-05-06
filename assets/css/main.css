@@ -3,6 +3,10 @@
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 .text-6xl {
     background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
     -webkit-background-clip: text;
