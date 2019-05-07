@@ -5,14 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kyle David Wagner</title>
+  <title>Kyle Wagner</title>
   <meta name="description" content="Kyle Wagner is a marketer who designs and codes.">
   <meta name="keywords" content="designer, coder, marketing, digital, web design, web developer, development">
   <meta name="author" content="Kyle David Wagner">
 
   <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -26,7 +25,7 @@
             </div>
             <div class="block lg:hidden">
               <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-gray-900 border-gray-900 hover:text-white hover:border-white hover:bg-gray-900">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+                <svg class="fill-current h-3 w-3" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
               </button>
             </div>
             <div :class="open ? 'block': 'hidden'" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
@@ -85,6 +84,17 @@
     </div>
 
     <!-- Featured Work Option 2 -->
+    <div class="flex md:flex-row-reverse flex-wrap mb-8">
+        <div class="w-full md:w-1/2 bg-gray-200"><img src="assets/images/full/Mockup_TT_Microsite.png" class="w-full" alt="BIKING-LAOS Logotype"></div>
+        <div class="w-full md:w-1/2 bg-gray-300">
+          <div class="w-full p-4 lg:p-8 bg-gray-300 h-full">
+            <span class="block font-thin text-md text-gray-600 tracking-widest py-1">DIGITAL MARKETING</span>
+            <span class="block font-semibold text-4xl text-gray-900 py-1">Microsite Campaign</span>
+            <span class="block text-md text-gray-900 py-1">Two microsites built around a marketing camapaign to promote inbound tourism to Luang Prabang.</span>
+            <div class="py-3"><button class="gradient-bloody-mimosa hover:shadow-lg text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
+          </div>
+        </div>
+      </div>
     <div class="flex mb-4">
         <div class="w-full p-4 lg:p-8 bg-gray-300 h-full">
           <span class="block font-thin text-md text-gray-600 tracking-widest py-1">DIGITAL MARKETING</span>
@@ -124,17 +134,13 @@
     <!-- Footer -->
     <div class="p-4 lg:p-8 mb-5">
     <div class="w-full h-full">
-        <p class="inline-block float-left antianilised font-thin text-sm text-gray-900">Kyle David Wagner</p>
+        <p class="inline-block float-left antianilised font-thin text-sm text-gray-900">Kyle Wagner</p>
         <p class="inline-block float-right antianilised font-thin text-sm text-gray-900">© 2019</p>
     </div>
     </div>
 
     <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script>
-    <script>
-    const element =  document.querySelector('.logo')
-element.classList.add('animated', 'bounceOutLeft')
-    </script>
     <script>
 new Vue({
 	el: '#app',
