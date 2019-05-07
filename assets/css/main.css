@@ -1,5 +1,10 @@
 /* Main CSS for My Website */
 
+/* Spacing Paragraphs */
+p {
+  padding-bottom: 0.75rem;
+  }
+
 /* Button Gradients */
 .gradient-bloody-mimosa {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
@@ -40,6 +45,7 @@ button:focus {
 /* Super cool gradient animation for my CTA */
 .text-6xl {
     background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 1800% 1800%;
