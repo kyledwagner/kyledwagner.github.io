@@ -1,7 +1,17 @@
 /* Main CSS for My Website */
 
+/* Button Gradients */
 .gradient-bloody-mimosa {
     background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+}
+.gradient-sea-salt {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+.gradient-lovely-lilly {
+  background: linear-gradient(90deg, #b98bd4 0%, #515ada 100%);
+}
+.gradient-dusty-cactus {
+  background: linear-gradient(90deg, #dad36c 0%, #c67700 100%);
 }
 
 /* Prevents flickering for Scrollreveal animations during page loading */
