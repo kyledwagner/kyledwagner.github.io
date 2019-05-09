@@ -15,9 +15,6 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<div class="load-hidden"></div>
-
-
 <body class="bg-gray-200 font-sans">
 
     <div class="h-screen angled-top flex items-center" id="app">
@@ -143,16 +140,6 @@
     ScrollReveal().reveal('.shadow-lg', { duration: 1000, interval: 25, reset: false, mobile: true });
     ScrollReveal().reveal('.CTA', { duration: 1000, delay: 400, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
-    </script>
-    <script>
-    window.onscroll = function() {
-    var target = document.getElementById("arrow");
-    var height = window.innerHeight;
-    var scrollTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
-    // Change this if you want it to fade faster
-    height = height / 10;
-    target.style.opacity = (height - scrollTop) / height;
-    };
     </script>
     </body>
 </html>
