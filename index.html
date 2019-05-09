@@ -20,7 +20,7 @@
 
 <body class="bg-gray-200 font-sans">
 
-    <div class="h-screen flex items-center" id="app">
+    <div class="h-screen angled-top flex items-center" id="app">
         <!-- Top Nav -->
         <nav class="absolute top-0 left-0 right-0 flex items-center justify-between p-4 md:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
@@ -30,13 +30,13 @@
               <div class="text-sm flex-grow ml-4">
               </div>
               <div class="Menu load-hidden pl-2">
-                <a href="/about.html" class="inline-block font-medium text-sm :text-base px-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">About</a>
+                <a href="/about.html" class="inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">About</a>
               </div>
               <div class="Menu load-hidden md:pr-2">
                 <a href="/work.html" class="inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">Work</a>
               </div>
               <button class="Menu load-hidden pl-2 hidden md:inline-block">
-                  <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-sm xl:text-base px-4 py-2 shadow hover:shadow-outline leading-none rounded-full text-white gradient-button mt-4 md:mt-0">Resume</a>
+                  <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-normal text-sm xl:text-base px-4 py-2 shadow hover:shadow-outline leading-none rounded-full text-white gradient-button mt-4 md:mt-0">Resume</a>
               </button>
             </div>
           </nav>
@@ -44,13 +44,6 @@
     <!-- Main CTA -->
     <div class="CTA load-hidden inline-block text-left text-gray-900 font-semibold text-6xl w-full md:w-2/3 leading-none p-4 lg:p-8">Kyle Wagner is a marketer who designs &amp; codes.</div>
     </div>
-
-    <div class="arrow load-hidden" id="arrow">
-        <ul class="down-line">
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
 
     <!-- Featured Work -->
     <div class="p-4 lg:p-8">
@@ -148,7 +141,6 @@
     <script src="assets/js/vue-router.js"></script> -->
     <script>
     ScrollReveal().reveal('.shadow-lg', { duration: 1000, interval: 25, reset: false, mobile: true });
-    // ScrollReveal().reveal('.angled-top', { duration: 3000, reset: false, mobile: true });
     ScrollReveal().reveal('.CTA', { duration: 1000, delay: 300, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.down-line', { duration: 1000, delay: 800, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
