@@ -26,15 +26,15 @@
             <div class="w-full flex-grow flex md:items-center md:w-auto">
               <div class="text-sm flex-grow ml-4">
               </div>
-              <div class="Nav load-hidden pl-2">
-                <a href="/about.html" class="inline-block font-medium text-sm px-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">About</a>
+              <div class="Menu load-hidden pl-2">
+                <a href="/about.html" class="inline-block font-medium text-sm :text-base px-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">About</a>
               </div>
-              <div class="Nav load-hidden md:pr-2">
-                <a href="/work.html" class="inline-block font-medium text-sm pl-4 pr-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">Work</a>
+              <div class="Menu load-hidden md:pr-2">
+                <a href="/work.html" class="inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-gray-900 hover:underline mt-2 md:mt-0">Work</a>
               </div>
-              <div class="Nav load-hidden pl-2 hidden md:inline-block">
-                  <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-sm px-4 py-2 leading-none border-2 rounded text-gray-900 border-gray-900 hover:border-transparent hover:text-white hover:bg-gray-900 mt-4 md:mt-0">Resume</a>
-              </div>
+              <button class="Menu load-hidden pl-2 hidden md:inline-block">
+                  <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-sm xl:text-base px-4 py-2 shadow hover:shadow-outline leading-none rounded-full text-white gradient-button mt-4 md:mt-0">Resume</a>
+              </button>
             </div>
           </nav>
     </div>
@@ -86,8 +86,8 @@
     <!-- <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script> -->
     <script>
-    ScrollReveal().reveal('.shadow-lg, .Nav, .Logo, .CTA', { duration: 1000, interval: 25, reset: false, mobile: true });
-    ScrollReveal().reveal('.CTA', { duration: 1000, delay: 300, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
+    ScrollReveal().reveal('.shadow-lg', { duration: 1000, interval: 25, reset: false, mobile: true });
+    ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
     </script>
     </body>
 </html>
