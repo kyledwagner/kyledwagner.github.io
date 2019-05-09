@@ -115,7 +115,7 @@ button:focus {
     border-radius: 5px 0 0 5px;
   }
   .arrow ul li:nth-child(2) {
-    left: 10px;
+    left: 6px;
     position: absolute;
     border-radius: 0 5px 5px 0;
     top: 0;
@@ -153,3 +153,13 @@ button:focus {
               transform: translateY(0);
     }
   }
+
+/* Angled Home Background */
+.angled-top {
+  z-index: -2;
+  background:linear-gradient(45deg, #EDF2F7, #EDF2F7 64%, #F7FAFC 64%, #F7FAFC);
+}
+.glow {
+  z-index: -2;
+  background:linear-gradient(45deg, #EDF2F7, #EDF2F7 75%, white 85%, white);
+}
