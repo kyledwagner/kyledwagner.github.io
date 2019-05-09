@@ -155,11 +155,11 @@ button:focus {
   }
 
 /* Angled Home Background */
-.angled-top {
+/* .angled-top {
   z-index: -2;
   background:linear-gradient(45deg, #EDF2F7, #EDF2F7 67%, #F7FAFC 67%, #F7FAFC);
 }
 .glow {
   z-index: -2;
   background:linear-gradient(39deg, #EDF2F7, #EDF2F7 60%, white 80%, white);
-}
+} */
