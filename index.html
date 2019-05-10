@@ -15,7 +15,7 @@
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<body class="bg-gray-200 font-sans angled-top">
+<body class="bg-gray-200 font-sans">
         <!-- Top Nav -->
         <nav class="Menu load-hidden z-10 fixed md:absolute bg-white md:bg-transparent shadow md:shadow-none w-screen flex items-center justify-between p-4 md:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
@@ -35,31 +35,62 @@
               </button>
             </div>
           </nav>
-    <div class="h-screen flex items-center">
+    <div class="h-screen flex items-center angled-top">
 
     <!-- Main CTA -->
     <div class="CTA load-hidden block text-left text-gray-900 font-semibold text-6xl w-full md:w-2/3 leading-none p-4 md:p-8">Kyle Wagner is a marketer who designs &amp; codes.</div>
     </div>
 
-    <!-- Featured Work Alternative -->
+    <!-- Microsite Campaign -->
     <div class="p-4 lg:p-12">
-    <div class="flex flex-wrap -mx-2">
-    <div class="bg-white rounded-lg overflow-hidden shadow-md">
+    <div class="card bg-white rounded-lg shadow-md lg:w-1/2 xl:w-1/3">
+    <img class="w-full rounded-t-lg" src="assets/images/work/cover/Tiger_Trail_Microsite.jpg" alt="iPhone X Microsite Design">
       <div class="px-6 py-4">
         <span class="block font-thin text-md text-gray-600 tracking-widest py-1">DIGITAL MARKETING</span>
-        <span class="block font-semibold text-3xl text-gray-900 py-1">Microsite Campaign</span>
+        <span class="block leading-none font-semibold text-3xl text-gray-900 py-1">Microsite Campaign</span>
         <span class="block text-md text-gray-900 py-1">Two microsites built around a marketing camapaign to promote inbound tourism to Luang Prabang.</span>
-        <div class="py-3"><button class="gradient-bloody-mimosa text-white font-semibold py-2 px-4 rounded-full">View Project</button></div>
-    </div>
-    <div class="bg-white rounded-lg overflow-hidden shadow-md">
-      <div class="px-6 py-4">
-        <span class="block font-thin text-md text-gray-600 tracking-widest py-1">DIGITAL MARKETING</span>
-        <span class="block font-semibold text-3xl text-gray-900 py-1">Microsite Campaign</span>
-        <span class="block text-md text-gray-900 py-1">Two microsites built around a marketing camapaign to promote inbound tourism to Luang Prabang.</span>
-        <div class="py-3"><button class="gradient-bloody-mimosa text-white font-semibold py-2 px-4 rounded-full">View Project</button></div>
+        <div class="py-3"><button class="gradient-bloody-mimosa text-sm text-white font-semibold py-2 px-4 rounded-full">View Project</button></div>
+      </div>
     </div>
     </div>
-    </div>
+
+    <!-- Refine Asia -->
+    <div class="px-4 lg:px-12">
+      <div class="card bg-white rounded-lg shadow-md lg:w-1/2 xl:w-1/3">
+      <img class="w-full rounded-t-lg" src="assets/images/work/cover/Refine_Asia_Business_Card.jpg" alt="Refine Asia Logo">
+        <div class="px-6 py-4">
+          <span class="block font-thin text-md text-gray-600 tracking-widest py-1">BRANDING & IDENTITY</span>
+          <span class="block leading-none font-semibold text-4xl text-gray-900 py-1">Refine Asia</span>
+          <span class="block text-md text-gray-900 py-1">A complete rebranding and full identity development for an Asian luxury travel company.</span>
+          <div class="py-3"><button class="gradient-sea-salt text-sm hover:shadow-lg text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
+        </div>
+      </div>
+      </div>
+
+    <!-- Microsite Campaign -->
+    <div class="p-4 lg:p-12">
+      <div class="card bg-white rounded-lg shadow-md lg:w-1/2 xl:w-1/3">
+      <img class="w-full rounded-t-lg" src="assets/images/work/cover/GIZ_Heritage_Poster.jpg" alt="Poster Design for GIZ">
+        <div class="px-6 py-4">
+          <span class="block font-thin text-md text-gray-600 tracking-widest py-1">COMMUNICATION DESIGN</span>
+          <span class="block leading-none font-semibold text-4xl text-gray-900 py-1">UNESCO Heritage</span>
+          <span class="block text-md text-gray-900 py-1">Project lead by GIZ in collaboration with UNESCO to support the protection of Luang Prabang's world heritage.</span>
+          <div class="py-3"><button class="gradient-dusty-cactus text-sm hover:shadow-lg text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
+        </div>
+      </div>
+      </div>
+
+      <div class="px-4 lg:px-12">
+      <div class="card bg-white rounded-lg shadow-md lg:w-1/2 xl:w-1/3">
+      <img class="w-full rounded-t-lg" src="assets/images/work/cover/AOS_Microsite.jpg" alt="Asia On Stage Microsite">
+        <div class="px-6 py-4">
+          <span class="block font-thin text-md text-gray-600 tracking-widest py-1">FRONT-END WEB DEVELOPMENT</span>
+          <span class="block leading-none font-semibold text-4xl text-gray-900 py-1">Asia on Stage</span>
+          <span class="block text-md text-gray-900 py-1">Responsive, single page microsite with captivating animations to promote a stage event at ITB Berlin.</span>
+          <div class="py-3"><button class="gradient-lovely-lilly text-sm hover:shadow-lg text-white font-bold py-2 px-4 rounded-full">View Project</button></div>
+        </div>
+      </div>
+      </div>
 
     <!-- Footer -->
     <div class="p-4 lg:p-8 mb-5">
@@ -70,7 +101,7 @@
     <!-- <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script> -->
     <script>
-    ScrollReveal().reveal('.shadow-lg', { duration: 1000, interval: 25, reset: false, mobile: true });
+    ScrollReveal().reveal('.card', { duration: 1000, ease: 'ease-in-out', origin: 'bottom', distance: '15px', reset: false, mobile: true });
     ScrollReveal().reveal('.CTA', { duration: 1000, delay: 400, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
     </script>

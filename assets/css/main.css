@@ -78,7 +78,6 @@ button:focus {
     }
   }
 
-
 /* Angled Home Background */
 .angled-top {
   background:linear-gradient(50deg, #EDF2F7, #EDF2F7 67%, #F7FAFC 67%, #F7FAFC);
@@ -88,8 +87,4 @@ button:focus {
 .angled-top {
   background:linear-gradient(50deg, #EDF2F7, #EDF2F7 57%, #F7FAFC 57%, #F7FAFC);
 }
-}
-
-.glow {
-  background:linear-gradient(39deg, #EDF2F7, #EDF2F7 60%, white 80%, white);
 }
