@@ -79,10 +79,16 @@
     </div>
 
     <!-- Advertisements -->
-    <div class="flex bg-red-700">
-      <div class="self-center text-center mx-auto px-8 py-16">
+    <div class="flex w-screen bg-red-700">
+      <div class="w-screen self-center text-center mx-auto px-8 py-16">
           <span class="block font-thin text-md text-white uppercase tracking-widest py-2">Advertisements</span>
           <hr class="block border-t border-white w-1/4">
+          <div class="siema">
+            <div><img class="w-100" src="../assets/images/work/slider/Microsite_3-Day_Slide_01.jpg"></div>
+            <div><img class="w-100" src="../assets/images/work/slider/Microsite_3-Day_Slide_02.jpg"></div>
+            <div><img class="w-100" src="../assets/images/work/slider/Microsite_3-Day_Slide_03.jpg"></div>
+            <div><img class="w-100" src="../assets/images/work/slider/Microsite_3-Day_Slide_04.jpg"></div>
+          </div>
       </div>
     </div>
 
@@ -114,6 +120,20 @@
 
     <!-- <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script> -->
+    <script src="../assets/js/siema.min.js"></script>
+    <script>
+      new Siema({
+  selector: '.siema',
+  duration: 500,
+  easing: 'ease-in-out',
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: false,
+  threshold: 20,
+  loop: false,
+});
+    </script>
     <script>
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.about', { duration: 1000, interval: 25, reset: false, mobile: true });
