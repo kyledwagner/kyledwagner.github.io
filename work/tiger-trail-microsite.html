@@ -13,6 +13,8 @@
   <link href="https://unpkg.com/tailwindcss@next/dist/tailwind.min.css" rel="stylesheet">
   <link href="../assets/css/main.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet" crossorigin="anonymous">
+  <link href="slick/slick.css"rel="stylesheet" type="text/css">
+  <link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -80,10 +82,16 @@
     </div>
 
     <!-- Advertisements -->
-    <div class="flex w-screen bg-red-700">
+    <div class="flex w-screen bg-gray-200">
       <div class="w-screen self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
-          <span class="block font-thin text-md lg:text-xl text-white uppercase tracking-widest py-2">Advertisements</span>
-          <hr class="block border-t border-white w-16">
+          <span class="block font-thin text-md lg:text-xl text-gray-900 uppercase tracking-widest py-2">Advertisements</span>
+          <hr class="block border-t border-gray-900 w-16">
+          <div class="advertisements">
+            <div><img src="../assets/images/work/slider/Microsite_3-Day_Slide_01.jpg"></div>
+            <div><img src="../assets/images/work/slider/Microsite_3-Day_Slide_02.jpg"></div>
+            <div><img src="../assets/images/work/slider/Microsite_3-Day_Slide_03.jpg"></div>
+            <div><img src="../assets/images/work/slider/Microsite_3-Day_Slide_04.jpg"></div>
+          </div>
       </div>
     </div>
 
@@ -92,14 +100,14 @@
       <div class="self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
           <span class="block font-thin text-md lg:text-xl text-gray-900 uppercase tracking-widest py-2">Scoot Opportunity</span>
           <hr class="block border-t border-gray-900 w-16">
-          <span class="block text-xl font-thin text-gray-900 py-2 leading-tight md:text-3xl md:leading-normal">Scoot was launching direct flights to Luang Prabang during the campaign, so we developed an advertisement and integrated this promotion into the microsite.</span>
+          <span class="block mb-8 text-xl font-thin text-gray-900 py-2 leading-tight md:text-3xl md:leading-normal">Scoot was launching direct flights to Luang Prabang during the campaign, so we developed an advertisement and integrated this promotion into the microsite.</span>
           <!-- <img class="card mt-4 object-cover bg-white rounded-lg shadow-md" src="../assets/images/work/Microsite_Scoot_Ad.jpg"> -->
-          <img class="card mx-auto -mb-40" src="../assets/images/work/iPhoneX_Mockup_Scoot_Ad.png">
+          <img class="card mx-auto -mb-40" src="../assets/images/work/iPhoneX_Mockup_Scoot_Ad-1.png">
       </div>
     </div>
 
     <!-- Testimonial Ads -->
-    <div class="flex bg-gray-200 pt-12">
+    <div class="flex bg-gray-200 pt-16">
       <div class="self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
           <span class="block font-thin text-md md:text-xl text-gray-900 uppercase tracking-widest py-2">Testimonial Ads</span>
           <hr class="block border-t border-gray-900 w-16">
@@ -134,6 +142,14 @@
 
     <!-- <script src="assets/js/vue.min.js"></script>
     <script src="assets/js/vue-router.js"></script> -->
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.advertisements').slick({
+          setting-name: setting-value
+        });
+      });
+    </script>
     <script>
     ScrollReveal().reveal('.card', { duration: 1000, ease: 'ease-in-out', origin: 'bottom', distance: '25px', interval: 90, reset: false, mobile: true });
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
