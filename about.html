@@ -19,7 +19,8 @@
 <body class="bg-gray-200 font-sans">
 
         <!-- Top Nav -->
-        <nav class="z-10 fixed md:absolute bg-white md:bg-transparent shadow md:shadow-none w-screen flex items-center justify-between p-4 md:p-8">
+        <div class="mt-16 md:mt-32">
+        <nav class="z-10 fixed top-0 md:absolute bg-white md:bg-transparent shadow md:shadow-none w-screen flex items-center justify-between p-4 md:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
               <a href="index.html"><span class="antianilised font-medium text-2xl md:text-4xl text-gray-900 hover:text-gray-800">Kyle&nbsp;Wagner</span></a>
             </div>
@@ -27,18 +28,19 @@
               <div class="text-sm flex-grow ml-4">
               </div>
               <div class="pl-2">
-                <a href="/about.html" class="inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-gray-900 hover:text-gray-700 mt-2 md:mt-0">About</a>
+                <a href="about.html" class="inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-gray-900 hover:text-gray-700 mt-2 md:mt-0">About</a>
               </div>
               <div class="md:pr-2">
-                <a href="/work.html" class="inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-gray-900 hover:text-gray-700 mt-2 md:mt-0">Work</a>
+                <a href="work.html" class="inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-gray-900 hover:text-gray-700 mt-2 md:mt-0">Work</a>
               </div>
               <button class="pl-2 hidden md:inline-block">
                   <a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-normal text-sm xl:text-base px-4 py-2 shadow hover:shadow-outline leading-none rounded-full text-white gradient-button mt-4 md:mt-0">Resume</a>
               </button>
             </div>
         </nav>
+        </div>
 
-    <div class="pt-24 p-4 md:p-8 w-full lg:w-3/4">
+    <div class="p-4 pt-8 md:p-8 w-full lg:w-3/4">
       <img src="assets/images/Kyle_Wagner_Profile.jpg" class="about load-hidden lg:w-1/2 w-1/2 rounded-full sm:rounded-none" alt="Profile Photo">
     </div>
 
@@ -49,14 +51,14 @@
         <p class="about load-hidden text-lg font-thin text-gray-900">My passion for design started when I was 12 years old, curiously experimenting with Illustrator and Photoshop on my family’s Macintosh. After learning from mentors along the way, I began designing professionally since 2014 and coding since 2017.</p>
         <p class="about load-hidden text-lg font-thin text-gray-900">This website is my home for documenting client work and personal work throughout my life.</p>
         <p class="about load-hidden text-lg font-thin text-gray-900">Message me at <a href="mailto:kylewag@me.com" class="hover:text-gray-600 underline font-medium">kylewag@me.com</a> — my inbox is always open. If you’re in Southeast Asia, stop by Luang Prabang and have a drink. Otherwise, stalk me on social media.</p>
-        <div class="about load-hidden py-4"><a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="inline-block font-medium text-lg px-10 py-2 shadow hover:shadow-outline rounded-full text-white gradient-button">Download Resume</a></div>
+        <div class="flex about load-hidden py-4"><a href="assets/docs/WAGNER_RESUME_19.pdf" target="_blank" class="mx-auto font-medium text-lg px-8 py-2 shadow hover:shadow-outline rounded-full text-white gradient-button">Download Resume</a></div>
     </div>
-    <div class="flex justify-between md:justify-start py-4 px-4 lg:px-8 text-xl">
-      <a href="https://github.com/kyledwagner" target="_blank"><i class="md:mr-4 inline-block text-gray-900 hover:text-gray-600 fab fa-github fa-2x"></i></a>
-      <a href="https://t.me/kdwagner" target="_blank"><i class="md:mx-4 inline-block text-gray-900 hover:text-gray-600 fab fa-telegram fa-2x"></i></a>
-      <a href="https://wa.me/66803620972" target="_blank"><i class="md:mx-4 inline-block text-gray-900 hover:text-gray-600 fab fa-whatsapp fa-2x"></i></a>
-      <a href="https://www.instagram.com/kyledwagner/" target="_blank"><i class="md:mx-4 inline-block text-gray-900 hover:text-gray-600 fab fa-instagram fa-2x"></i></a>
-      <a href="https://www.linkedin.com/in/kyledwagner" target="_blank"><i class="md:mx-4 inline-block text-gray-900 hover:text-gray-600 fab fa-linkedin fa-2x"></i></a>
+    <div class="social load-hidden text-xl flex justify-around py-4 px-10 lg:px-8">
+      <a href="https://github.com/kyledwagner" target="_blank"><i class="px-2 inline-block text-gray-800 hover:text-gray-600 fab fa-github fa-2x"></i></a>
+      <a href="https://t.me/kdwagner" target="_blank"><i class="px-2 inline-block text-gray-800 hover:text-gray-600 fab fa-telegram fa-2x"></i></a>
+      <a href="https://wa.me/66803620972" target="_blank"><i class="px-2 inline-block text-gray-800 hover:text-gray-600 fab fa-whatsapp fa-2x"></i></a>
+      <a href="https://www.instagram.com/kyledwagner/" target="_blank"><i class="px-2 inline-block text-gray-800 hover:text-gray-600 fab fa-instagram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/kyledwagner" target="_blank"><i class="px-2 inline-block text-gray-800 hover:text-gray-600 fab fa-linkedin fa-2x"></i></a>
     </div>
 
     <!-- Footer -->
@@ -71,7 +73,8 @@
     <script src="assets/js/vue-router.js"></script> -->
     <script>
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
-    ScrollReveal().reveal('.about', { duration: 1000, interval: 25, reset: false, mobile: true });
+    ScrollReveal().reveal('.about', { duration: 1000, reset: false, mobile: true });
+    ScrollReveal().reveal('.social', { duration: 1000, delay: 100, interval: 500, reset: false, mobile: true });
     </script>
     </body>
 </html>
