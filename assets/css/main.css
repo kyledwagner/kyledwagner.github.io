@@ -88,3 +88,7 @@ button:focus {
   background:linear-gradient(50deg, #EDF2F7, #EDF2F7 57%, #F7FAFC 57%, #F7FAFC);
 }
 }
+
+.bg-scoot {
+  background-color: #fff100;
+}
