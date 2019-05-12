@@ -81,7 +81,7 @@
     </div>
 
     <!-- Advertisements -->
-    <div class="flex w-screen bg-gray-200">
+    <div class="flex bg-gray-200">
       <div class="w-screen self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
           <span class="block font-thin text-md lg:text-xl text-gray-900 uppercase tracking-widest py-2">Advertisements</span>
           <hr class="block border-t border-gray-900 w-16">
@@ -107,27 +107,27 @@
 
     <!-- Testimonial Ads -->
     <div class="flex bg-gray-200 pt-16">
-      <div class="self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
+      <div class="w-screen self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
           <span class="block font-thin text-md md:text-xl text-gray-900 uppercase tracking-widest py-2">Testimonial Ads</span>
           <hr class="block border-t border-gray-900 w-16">
-          <img class="">
+          <div class="center py-4 -mx-8">
+            <div><img class="px-2" src="../assets/images/work/slider/Microsite_Testimonial_Ad_1.jpg"></div>
+            <div><img class="px-2" src="../assets/images/work/slider/Microsite_Testimonial_Ad_2.jpg"></div>
+            <div><img class="px-2" src="../assets/images/work/slider/Microsite_Testimonial_Ad_3.jpg"></div>
+            <div><img class="px-2" src="../assets/images/work/slider/Microsite_Testimonial_Ad_4.jpg"></div>
+          </div>
       </div>
     </div>
 
     <!-- Microsite -->
     <div class="flex bg-red-800">
-      <div class="self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
+      <div class="w-screen self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
           <span class="block font-thin text-md md:text-xl text-white uppercase tracking-widest py-2">Microsite</span>
           <hr class="block border-t border-white w-16">
-          <img class="">
-      </div>
-    </div>
-
-    <!-- Phi Mai Special -->
-    <div class="flex bg-red-900">
-      <div class="self-center text-center mx-auto md:w-2/3 md:py-64 px-8 py-16">
-          <span class="block font-thin text-md md:text-xl text-white uppercase tracking-widest py-2">Phi Mai Special</span>
-          <hr class="block border-t border-white w-16">
+          <div class="center-2 py-4 -mx-8">
+            <div><img class="px-2" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_1.png"></div>
+            <div><img class="px-2" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_2.png"></div>
+          </div>
       </div>
     </div>
 
@@ -169,6 +169,14 @@
       }
     }
   ]
+});
+$('.center-2').slick({
+  initialslide: 0,
+  arrows: false,
+  infinite: false,
+  centerMode: true,
+  centerPadding: '60px',
+  slidesToShow: 1,
 });
     </script>
     <script>
