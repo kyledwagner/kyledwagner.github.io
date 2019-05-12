@@ -92,3 +92,6 @@ button:focus {
 .bg-scoot {
   background-color: #fff100;
 }
+
+.center { display: none; }
+.center.slick-initialized { display: block; }
