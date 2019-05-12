@@ -93,6 +93,10 @@ button:focus {
   background-color: #fff100;
 }
 
+.bg-tt {
+  background-color: #a71c20;
+}
+
 .center { display: none; }
 .center.slick-initialized { display: block; }
 .center-2 { display: none; }
