@@ -97,6 +97,10 @@ button:focus {
   background-color: #a71c20;
 }
 
+.bg-refine {
+  background-color: #131E29;
+}
+
 .center { display: none; }
 .center.slick-initialized { display: block; }
 .center-2 { display: none; }
