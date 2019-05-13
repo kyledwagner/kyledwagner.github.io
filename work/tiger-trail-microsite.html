@@ -99,7 +99,7 @@
           <span class="reveal block font-thin text-md lg:text-xl text-gray-900 uppercase tracking-widest py-2">Advertisements</span>
           <hr class="reveal block border-t border-gray-900 w-16">
           <span class="reveal block text-xl font-thin text-gray-900 py-2 leading-tight md:text-3xl md:leading-normal">We told a story through a carousel of 4 images in Facebook and Instagram ads.</span>
-          <div class="center py-4 -mx-8">
+          <div class="center-3 py-4 -mx-8">
             <div><img class="px-2" src="../assets/images/work/slider/Microsite_3-Day_Slide_01.jpg"></div>
             <div><img class="px-2" src="../assets/images/work/slider/Microsite_3-Day_Slide_02.jpg"></div>
             <div><img class="px-2" src="../assets/images/work/slider/Microsite_3-Day_Slide_03.jpg"></div>
@@ -171,8 +171,8 @@
           <button class="reveal my-4 mx-4 font-semibold text-white text-base rounded-full bg-tt shadow hover:bg-red-900 px-6 py-2"><a href="https://3-day.laos-adventures.com" target="_blank">3-day.laos-adventures.com</a></button>
           </div>
           <div class="center-2 py-4 -mx-8 -mb-40">
-            <div><img class="px-2" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_1.png"></div>
-            <div><img class="px-2" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_2.png"></div>
+            <div><img class="px-4" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_1.png"></div>
+            <div><img class="px-4" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_2.png"></div>
           </div>
           <div class="hidden lg:block mx-auto pt-16 py-4">
               <img class="card load-hidden inline-block w-1/5 mx-8" src="../assets/images/work/slider/iPhoneX_Mockup_Microsite_3-Days_1.png">
@@ -240,6 +240,39 @@ $('.center-2').slick({
   infinite: false,
   centerMode: true,
   centerPadding: '60px',
+  slidesToShow: 1,
+  responsive: [
+            {
+            breakpoint: 9999,
+            settings: "unslick"
+        },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        dots: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+$('.center-3').slick({
+  initialslide: 0,
+  infinite: false,
+  dots: true,
+  centerMode: false,
   slidesToShow: 1,
   responsive: [
             {
