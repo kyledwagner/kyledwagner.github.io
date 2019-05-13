@@ -101,6 +101,10 @@ button:focus {
   background-color: #131E29;
 }
 
+.bg-refine-gold {
+  background-color: #D29F13;
+}
+
 .center { display: none; }
 .center.slick-initialized { display: block; }
 .center-2 { display: none; }
