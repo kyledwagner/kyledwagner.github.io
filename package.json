@@ -21,6 +21,7 @@
     "tailwindcss": "^1.0.1"
   },
   "dependencies": {
+    "gulp": "^4.0.2",
     "jquery": "^3.4.0",
     "tailwindcss-transitions": "^1.0.4"
   }
