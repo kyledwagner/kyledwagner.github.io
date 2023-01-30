@@ -2,6 +2,11 @@ html {
 scroll-behavior: smooth;
 }
 
+/* New Background Color */
+.bg-gray-new {
+  background-color: #EEEBE6;
+}
+
 /* Main Helvetica Now Font */
 
 
@@ -23,20 +28,8 @@ p {
   }
 
 /* Button Gradients */
-.gradient-bloody-mimosa {
-    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-}
-.gradient-sea-salt {
-  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-}
-.gradient-lovely-lilly {
-  background: linear-gradient(90deg, #b98bd4 0%, #515ada 100%);
-}
-.gradient-dusty-cactus {
-  background: linear-gradient(90deg, #dad36c 0%, #c67700 100%);
-}
 .gradient-button {
-  background: linear-gradient(75deg, rgba(60,91,115,1) 0%, rgba(23,36,50,1) 50%);
+    background: linear-gradient(190deg, #615F5B 0%, #1D1B1B 100%);
 }
 
 /* Prevents flickering for Scrollreveal animations during page loading */
@@ -84,7 +77,7 @@ button:focus {
   }
 
 /* Angled Home Background */
-.angled-top {
+/* .angled-top {
   background:linear-gradient(50deg, #EDF2F7, #EDF2F7 67%, #F7FAFC 67%, #F7FAFC);
 }
 
@@ -92,7 +85,7 @@ button:focus {
 .angled-top {
   background:linear-gradient(50deg, #EDF2F7, #EDF2F7 57%, #F7FAFC 57%, #F7FAFC);
 }
-}
+} */
 
 .bg-scoot {
   background-color: #fff100;
