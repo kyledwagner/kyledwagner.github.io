@@ -14,19 +14,6 @@ scroll-behavior: smooth;
   margin-top: -0.23rem;
 }
 
-
-/* Making CTA Larger on Large Monitors */
-@media only screen and (min-width: 1024px) {
-  .CTA {
-    font-size: 5rem;
-  }
-  }
-@media only screen and (min-width: 1600px) {
-.CTA {
-  font-size: 6rem;
-}
-}
-
 /* Spacing Paragraphs */
 p {
   padding-bottom: 0.75rem;
@@ -60,8 +47,17 @@ button:focus {
   outline: none;
 }
 
+/* Smaller CTA text on mobile */
+
 /* Super cool gradient animation for my CTA */
-.text-7xl {
+
+@media (min-width: 1024px) {
+.tagline {
+  font-size: 6rem !important;
+}
+}
+
+.text-6xl {
     background: -webkit-linear-gradient(45deg, #1a1736, #1b3665, #014991, #067bcb, #fcf3d6, #fad384, #e18b74, #f26d42, #984466, #982e42);
     background-clip: text;
     -webkit-background-clip: text;
