@@ -9,6 +9,11 @@ scroll-behavior: smooth;
 
 /* Main Helvetica Now Font */
 
+/* Fixing Icon Button Alignment */
+.expand-icon {
+  margin-top: -0.2rem;
+}
+
 
 /* Making CTA Larger on Large Monitors */
 @media only screen and (min-width: 1024px) {
