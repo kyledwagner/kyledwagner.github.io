@@ -11,7 +11,7 @@ scroll-behavior: smooth;
 
 /* Fixing Icon Button Alignment */
 .expand-icon {
-  margin-top: -0.25rem;
+  margin-top: -0.23rem;
 }
 
 
@@ -62,12 +62,12 @@ button:focus {
 
 /* Super cool gradient animation for my CTA */
 .text-7xl {
-    background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
+    background: -webkit-linear-gradient(45deg, #1a1736, #1b3665, #014991, #067bcb, #fcf3d6, #fad384, #e18b74, #f26d42, #984466, #982e42);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 1800% 1800%;
-    animation: anim-bg-grad 60s ease infinite;
+    animation: anim-bg-grad 20s ease-out infinite;
 }
 @keyframes anim-bg-grad {
     0% {
