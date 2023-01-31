@@ -56,7 +56,7 @@ button:focus {
 }
 
 /* Super cool gradient animation for my CTA */
-.text-6xl {
+.text-7xl {
     background: -webkit-linear-gradient(45deg, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00, #24dfaf, #24bcdf, #a424df, #df245c, #ff9c00);
     background-clip: text;
     -webkit-background-clip: text;
