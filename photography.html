@@ -9,13 +9,13 @@
   <meta name="description" content="Kyle is a creative director and marketer.">
   <meta name="keywords" content="designer, coder, marketing, digital, web design, web developer, development">
   <meta name="author" content="Kyle David Wagner">
-  <link rel="canonical" href="https://findkyle.com/about">
+  <link rel="canonical" href="https://findkyle.com/photography">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <!-- <link href="assets/css/tailwind.min.css" rel="stylesheet"> -->
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet" crossorigin="anonymous">
-  <script src="//unpkg.com/alpinejs" defer></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
@@ -121,7 +121,8 @@
       <img 
         x-on:click="imageGalleryOpen" 
         class="w-full h-full object-cover cursor-zoom-in" 
-        src="/assets/images/photography/000464000011.jpg" 
+        src="/assets/images/photography/000464000011.jpg"
+        alt="Harman Red 125, Bangkok Old Town" 
       />
     </div>
     
@@ -141,7 +142,7 @@
       />
     </div>
     
-    <div class="w-full aspect-[3/2] overflow-hidden">
+    <div class="w-full aspect-[2/3] overflow-hidden">
       <img 
         x-on:click="imageGalleryOpen" 
         class="w-full h-full object-cover cursor-zoom-in" 

@@ -2,11 +2,6 @@ html {
 scroll-behavior: smooth;
 }
 
-/* New Background Color */
-.bg-gray-new {
-  background-color: #EEEBE6;
-}
-
 /* Secondary Pitch Sans Font */
 @font-face {
   font-family: 'Pitch Sans';
@@ -88,16 +83,10 @@ button:focus {
     }
   }
 
-/* Angled Home Background */
-/* .angled-top {
-  background:linear-gradient(50deg, #EDF2F7, #EDF2F7 67%, #F7FAFC 67%, #F7FAFC);
+/* New Background Color */
+.bg-gray-new {
+  background-color: #EEEBE6;
 }
-
-@media only screen and (max-width: 1024px) {
-.angled-top {
-  background:linear-gradient(50deg, #EDF2F7, #EDF2F7 57%, #F7FAFC 57%, #F7FAFC);
-}
-} */
 
 .bg-scoot {
   background-color: #fff100;
