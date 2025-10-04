@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Photography - Kyle Wagner</title>
   <meta name="description" content="Kyle is a creative director and marketer.">
@@ -25,19 +25,19 @@
         <div class="mt-16 md:mt-32">
         <nav class="z-10 fixed top-0 md:absolute bg-stone-950 border-b border-stone-800 md:border-none w-screen xl:px-36 flex items-center justify-between p-4 md:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
-              <a href="index.html"><span class="ease-out duration-200 antialiased font-medium text-2xl md:text-4xl text-stone-200 hover:text-stone-600">Kyle&nbsp;Wagner</span></a>
+              <a href="index.html"><span class="ease-out duration-200 antialiased font-medium text-2xl md:text-4xl text-stone-200 hover:text-stone-400">Kyle&nbsp;Wagner</span></a>
             </div>
             <div class="w-full flex-grow flex md:items-center md:w-auto">
               <div class="text-sm flex-grow ml-4">
               </div>
               <div class="hidden md:inline-block py-2">
-                <a href="/about.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">About</a>
+                <a href="/about.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">About</a>
               </div>
               <div class="hidden md:inline-block md:py-2">
-                <a href="/index.html#work" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">Work</a>
+                <a href="/index.html#work" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">Work</a>
               </div>
               <div class="hidden md:inline-block pl-2 pr-4">
-                <a href="/photography.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">Photography</a>
+                <a href="/photography.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">Photography</a>
               </div>
               <button id="dropdownOffsetButton" data-dropdown-toggle="dropdownOffset" data-dropdown-offset-distance="8" data-dropdown-offset-skidding="-31" class="md:pl-2">
                 <div class="ease-out duration-200 inline-block font-pitch text-sm xl:text-base px-6 py-3 leading-none rounded-full text-stone-100 md:hover:text-white md:text-white bg-stone-800 hover:bg-stone-300 md:bg-stone-800 md:hover:bg-stone-700">Hire me</div>
@@ -264,18 +264,22 @@
 
   <!-- Lightbox Modal -->
   <template x-teleport="body">
-    <div 
-      x-show="imageGalleryOpened" 
-      x-transition:enter="transition ease-in-out duration-300" 
-      x-transition:enter-start="opacity-0" 
-      x-transition:leave="transition ease-in-in duration-300" 
-      x-transition:leave-end="opacity-0" 
-      @click="imageGalleryClose" 
-      @keydown.window.escape="imageGalleryClose" 
-      x-trap.inert.noscroll="imageGalleryOpened" 
-      class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-90 select-none cursor-zoom-out" 
-      x-cloak
-    >
+        <div 
+        x-show="imageGalleryOpened" 
+        x-transition:enter="transition ease-in-out duration-300" 
+        x-transition:enter-start="opacity-0" 
+        x-transition:leave="transition ease-in-in duration-300" 
+        x-transition:leave-end="opacity-0" 
+        @click="imageGalleryClose" 
+        @keydown.window.escape="imageGalleryClose" 
+        x-effect="imageGalleryOpened ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''"
+        @touchmove.prevent
+        @gesturestart.prevent
+        @gesturechange.prevent
+        @wheel.prevent
+        class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-90 select-none cursor-zoom-out touch-none" 
+        x-cloak
+      >
       <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
         
         <!-- Previous Button -->
