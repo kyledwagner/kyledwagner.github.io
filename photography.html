@@ -69,15 +69,22 @@
     imageGalleryOpened: false,
     imageGalleryActiveUrl: null,
     imageGalleryImageIndex: null,
+    touchStartX: 0,
+    touchEndX: 0,
+    touchStartY: 0,
+    touchEndY: 0,
+    
     imageGalleryOpen(event) {
         this.imageGalleryImageIndex = event.target.dataset.index;
         this.imageGalleryActiveUrl = event.target.src;
         this.imageGalleryOpened = true;
     },
+    
     imageGalleryClose() {
         this.imageGalleryOpened = false;
         setTimeout(() => this.imageGalleryActiveUrl = null, 300);
     },
+    
     imageGalleryNext(){
         if(this.imageGalleryImageIndex == this.$refs.gallery.childElementCount){
             this.imageGalleryImageIndex = 1;
@@ -86,6 +93,7 @@
         }
         this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
     },
+    
     imageGalleryPrev() {
         if(this.imageGalleryImageIndex == 1){
             this.imageGalleryImageIndex = this.$refs.gallery.childElementCount;
@@ -93,6 +101,34 @@
             this.imageGalleryImageIndex = parseInt(this.imageGalleryImageIndex) - 1;
         }
         this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
+    },
+    
+    handleTouchStart(e) {
+        this.touchStartX = e.changedTouches[0].screenX;
+        this.touchStartY = e.changedTouches[0].screenY;
+    },
+    
+    handleTouchEnd(e) {
+        this.touchEndX = e.changedTouches[0].screenX;
+        this.touchEndY = e.changedTouches[0].screenY;
+        this.handleSwipe();
+    },
+    
+    handleSwipe() {
+        const deltaX = this.touchEndX - this.touchStartX;
+        const deltaY = Math.abs(this.touchEndY - this.touchStartY);
+        const minSwipeDistance = 50;
+        
+        // Only trigger if horizontal swipe is greater than vertical (prevent conflict with scroll)
+        if (Math.abs(deltaX) > minSwipeDistance && Math.abs(deltaX) > deltaY) {
+            if (deltaX > 0) {
+                // Swipe right - go to previous image
+                this.imageGalleryPrev();
+            } else {
+                // Swipe left - go to next image
+                this.imageGalleryNext();
+            }
+        }
     }
   }" 
   @image-gallery-next.window="imageGalleryNext()" 
@@ -270,7 +306,9 @@
         x-transition:enter-start="opacity-0" 
         x-transition:leave="transition ease-in-in duration-300" 
         x-transition:leave-end="opacity-0" 
-        @click="imageGalleryClose" 
+        @click="imageGalleryClose"
+        @touchstart="handleTouchStart($event)"
+        @touchend="handleTouchEnd($event)" 
         @keydown.window.escape="imageGalleryClose" 
         x-effect="imageGalleryOpened ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''"
         @touchmove.prevent

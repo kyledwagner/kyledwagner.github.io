@@ -82,7 +82,7 @@ button:focus {
 }
 }
 
-.text-6xl {
+.tagline {
     background: -webkit-linear-gradient(45deg, #1a1736, #1b3665, #014991, #067bcb, #fcf3d6, #fad384, #e18b74, #f26d42, #984466, #982e42);
     background-clip: text;
     -webkit-background-clip: text;
