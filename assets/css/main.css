@@ -7,7 +7,18 @@ scroll-behavior: smooth;
   background-color: #EEEBE6;
 }
 
-/* Main Helvetica Now Font */
+/* Secondary Pitch Sans Font */
+@font-face {
+  font-family: 'Pitch Sans';
+  src: url('/assets/fonts/pitch-sans-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-pitch {
+  font-family: 'Pitch Sans', sans-serif;
+}
 
 /* Fixing Icon Button Alignment */
 .expand-icon {

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Photography - Kyle Wagner</title>
+  <meta name="description" content="Kyle is a creative director and marketer.">
+  <meta name="keywords" content="designer, coder, marketing, digital, web design, web developer, development">
+  <meta name="author" content="Kyle David Wagner">
+  <link rel="canonical" href="https://findkyle.com/about">
+
+  <!-- <link href="assets/css/tailwind.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet" crossorigin="anonymous">
+  <script src="//unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body class="bg-stone-950 font-pitch">
+
+<!-- Top Nav -->
+        <div class="mt-16 md:mt-32">
+        <nav class="z-10 fixed top-0 md:absolute bg-stone-950 border-b border-stone-800 md:border-none w-screen xl:px-36 flex items-center justify-between p-4 md:p-8">
+            <div class="flex items-center flex-shrink-0 mr-6">
+              <a href="index.html"><span class="ease-out duration-200 antialiased font-medium text-2xl md:text-4xl text-stone-200 hover:text-stone-600">Kyle&nbsp;Wagner</span></a>
+            </div>
+            <div class="w-full flex-grow flex md:items-center md:w-auto">
+              <div class="text-sm flex-grow ml-4">
+              </div>
+              <div class="hidden md:inline-block py-2">
+                <a href="/about.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">About</a>
+              </div>
+              <div class="hidden md:inline-block md:py-2">
+                <a href="/index.html#work" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">Work</a>
+              </div>
+              <div class="hidden md:inline-block pl-2 pr-4">
+                <a href="/photography.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">Photography</a>
+              </div>
+              <button id="dropdownOffsetButton" data-dropdown-toggle="dropdownOffset" data-dropdown-offset-distance="8" data-dropdown-offset-skidding="-31" class="md:pl-2">
+                <div class="ease-out duration-200 inline-block font-pitch text-sm xl:text-base px-6 py-3 leading-none rounded-full text-stone-100 md:hover:text-white md:text-white bg-stone-800 hover:bg-stone-300 md:bg-stone-800 md:hover:bg-stone-700">Hire me</div>
+            </button>
+            </div>
+            <!-- Dropdown menu -->
+            <div id="dropdownOffset" class="z-10 hidden bg-stone-200 divide-y divide-stone-400 font-pitch rounded-lg drop-shadow-lg w-44">
+                <div class="px-4 py-3 text-sm xl:text-base text-stone-600">
+                  <div class="font-medium truncate">kylewag@me.com</div>
+                </div>
+                <ul class="py-2 text-sm xl:text-base font-pitch text-stone-900" aria-labelledby="dropdownDefaultButton">
+                  <li>
+                    <a href="https://wa.me/66803620972" target="_blank" class="block px-4 py-2 hover:bg-stone-200">WhatsApp</a>
+                  </li>
+                  <li>
+                    <a href="https://t.me/kdwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-200">Telegram</a>
+                  </li>
+                  <li>
+                    <a href="https://linkedin.com/in/kyledwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-200">Linkedin</a>
+                  </li>
+                </ul>
+            </div>
+        </nav>
+        </div>
+
+<!-- Gallery with Lightbox -->
+<div 
+  x-data="{
+    imageGalleryOpened: false,
+    imageGalleryActiveUrl: null,
+    imageGalleryImageIndex: null,
+    imageGalleryOpen(event) {
+        this.imageGalleryImageIndex = event.target.dataset.index;
+        this.imageGalleryActiveUrl = event.target.src;
+        this.imageGalleryOpened = true;
+    },
+    imageGalleryClose() {
+        this.imageGalleryOpened = false;
+        setTimeout(() => this.imageGalleryActiveUrl = null, 300);
+    },
+    imageGalleryNext(){
+        if(this.imageGalleryImageIndex == this.$refs.gallery.childElementCount){
+            this.imageGalleryImageIndex = 1;
+        } else {
+            this.imageGalleryImageIndex = parseInt(this.imageGalleryImageIndex) + 1;
+        }
+        this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
+    },
+    imageGalleryPrev() {
+        if(this.imageGalleryImageIndex == 1){
+            this.imageGalleryImageIndex = this.$refs.gallery.childElementCount;
+        } else {
+            this.imageGalleryImageIndex = parseInt(this.imageGalleryImageIndex) - 1;
+        }
+        this.imageGalleryActiveUrl = this.$refs.gallery.querySelector('[data-index=\'' + this.imageGalleryImageIndex + '\']').src;
+    }
+  }" 
+  @image-gallery-next.window="imageGalleryNext()" 
+  @image-gallery-prev.window="imageGalleryPrev()" 
+  @keyup.right.window="imageGalleryNext();" 
+  @keyup.left.window="imageGalleryPrev();" 
+  x-init="
+    imageGalleryPhotos = $refs.gallery.querySelectorAll('img');
+    for(let i=0; i<imageGalleryPhotos.length; i++){
+        imageGalleryPhotos[i].setAttribute('data-index', i+1);
+    }
+  "
+  class="w-full px-0 py-1 md:py-4 md:px-8 lg:py-10"
+>
+  <div x-ref="gallery" class="grid grid-cols-3 md:grid-cols-3 gap-1">
+    <div class="w-full aspect-[2/3] overflow-hidden">
+      <img 
+        x-on:click="imageGalleryOpen" 
+        class="w-full h-full object-cover cursor-zoom-in" 
+        src="/assets/images/photography/000470640013.jpg"
+        alt="Kodak Gold 200 + Canon Speedlite" 
+      />
+    </div>
+    
+    <div class="w-full aspect-[2/3] overflow-hidden">
+      <img 
+        x-on:click="imageGalleryOpen" 
+        class="w-full h-full object-cover cursor-zoom-in" 
+        src="/assets/images/photography/000464000011.jpg" 
+      />
+    </div>
+    
+    <div class="w-full aspect-[2/3] md:aspect-[3/2] overflow-hidden">
+      <img 
+        x-on:click="imageGalleryOpen" 
+        class="w-full h-full object-cover cursor-zoom-in" 
+        src="/assets/images/photography/000470640013.jpg" 
+      />
+    </div>
+    
+    <div class="w-full aspect-[2/3] overflow-hidden">
+      <img 
+        x-on:click="imageGalleryOpen" 
+        class="w-full h-full object-cover cursor-zoom-in" 
+        src="/assets/images/photography/000470640013.jpg" 
+      />
+    </div>
+    
+    <div class="w-full aspect-[3/2] overflow-hidden">
+      <img 
+        x-on:click="imageGalleryOpen" 
+        class="w-full h-full object-cover cursor-zoom-in" 
+        src="/assets/images/photography/000464000011.jpg" 
+      />
+    </div>
+  </div>
+
+  <!-- Lightbox Modal -->
+  <template x-teleport="body">
+    <div 
+      x-show="imageGalleryOpened" 
+      x-transition:enter="transition ease-in-out duration-300" 
+      x-transition:enter-start="opacity-0" 
+      x-transition:leave="transition ease-in-in duration-300" 
+      x-transition:leave-end="opacity-0" 
+      @click="imageGalleryClose" 
+      @keydown.window.escape="imageGalleryClose" 
+      x-trap.inert.noscroll="imageGalleryOpened" 
+      class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-90 select-none cursor-zoom-out" 
+      x-cloak
+    >
+      <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
+        
+        <!-- Previous Button -->
+        <div 
+          @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" 
+          class="absolute left-0 flex items-center justify-center text-white translate-x-10 rounded-full cursor-pointer xl:-translate-x-24 2xl:-translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20"
+        >
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+          </svg>
+        </div>
+        
+        <!-- Lightbox Image -->
+        <img 
+          x-show="imageGalleryOpened" 
+          x-transition:enter="transition ease-in-out duration-300" 
+          x-transition:enter-start="opacity-0 transform scale-50" 
+          x-transition:leave="transition ease-in-in duration-300" 
+          x-transition:leave-end="opacity-0 transform scale-50" 
+          class="object-contain object-center w-full h-full select-none cursor-zoom-out" 
+          :src="imageGalleryActiveUrl" 
+          alt=""
+        >
+        <figcaption 
+            x-show="imageGalleryOpened" 
+            x-text="$refs.gallery.querySelector('[data-index=\'' + imageGalleryImageIndex + '\']').alt" 
+            class="absolute bottom-0 left-0 right-0 text-center text-white text-sm md:text-lg font-pitch py-6 px-2 bg-gradient-to-t from-black/80 to-transparent"
+        ></figcaption>
+
+        <!-- Next Button -->
+        <div 
+          @click="$event.stopPropagation(); $dispatch('image-gallery-next');" 
+          class="absolute right-0 flex items-center justify-center text-white -translate-x-10 rounded-full cursor-pointer xl:translate-x-24 2xl:translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20"
+        >
+          <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </div>
+        
+      </div>
+    </div>
+  </template>
+</div>
+
+<!-- Footer -->
+    <div class="p-4 xl:px-36 lg:p-8 mb-5">
+      <p class="inline-block float-left antialiased font-pitch text-sm text-stone-200">Kyle Wagner</p>
+      <p class="inline-block float-right antialiased font-pitch text-sm text-stone-200">© <script>document.write(new Date().getFullYear())</script></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+    <script>
+    ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
+    ScrollReveal().reveal('.about', { duration: 1000, interval: 75, reset: false, mobile: true });
+    ScrollReveal().reveal('.social', { duration: 1000, delay: 100, interval: 75, reset: false, mobile: true });
+    ScrollReveal().reveal('.object-cover', { duration: 1000, delay: 100, interval: 200, reset: false, mobile: true });
+    </script>
+    </body>
+</html>
