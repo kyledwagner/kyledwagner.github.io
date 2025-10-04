@@ -12,45 +12,48 @@
   <link rel="canonical" href="https://findkyle.com/">
 
   <!-- <link href="assets/css/tailwind.min.css" rel="stylesheet"> -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <link href="assets/css/main.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
-<body class="bg-stone-100 font-sans">
+<body class="bg-stone-950 font-pitch">
 
         <!-- Top Nav -->
         <nav class="Menu load-hidden z-10 fixed md:absolute bg-stone-100 border-b border-stone-300 md:border-none md:bg-transparent w-screen xl:px-36 flex items-center justify-between p-4 md:p-8">
             <div class="flex items-center flex-shrink-0 mr-6">
-              <a href="index.html"><span class="ease-out duration-200 antialiased font-medium text-2xl md:text-4xl text-stone-900 hover:text-stone-600">Kyle&nbsp;Wagner</span></a>
+              <a href="index.html"><span class="ease-out duration-200 antialiased font-medium text-2xl md:text-4xl text-stone-200 hover:text-stone-400">Kyle&nbsp;Wagner</span></a>
             </div>
             <div class="w-full flex-grow flex md:items-center md:w-auto">
               <div class="text-sm flex-grow ml-4">
               </div>
-              <div class="hidden md:inline-block pl-2">
-                <a href="/about.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">About</a>
+              <div class="hidden md:inline-block py-2">
+                <a href="/about.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">About</a>
               </div>
-              <div class="hidden md:inline-block md:pr-2">
-                <a href="#work" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-stone-900 hover:text-stone-500 mt-2 md:mt-0">Work</a>
+              <div class="hidden md:inline-block md:py-2">
+                <a href="#work" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base pl-4 pr-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">Work</a>
+              </div>
+              <div class="hidden md:inline-block pl-2 pr-4">
+                <a href="/photography.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">Photography</a>
               </div>
               <button id="dropdownOffsetButton" data-dropdown-toggle="dropdownOffset" data-dropdown-offset-distance="8" data-dropdown-offset-skidding="-31" class="md:pl-2">
-                <div class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-6 py-3 leading-none rounded-full text-stone-800 md:hover:text-white md:text-white bg-stone-200 hover:bg-stone-300 md:bg-stone-800 md:hover:bg-stone-700">Hire Me</div>
+                <div class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-6 py-3 leading-none rounded-full text-stone-800 md:hover:text-white md:text-white bg-stone-200 hover:bg-stone-300 md:bg-stone-800 md:hover:bg-stone-700">Hire me</div>
             </button>
             </div>
             <!-- Dropdown menu -->
-            <div id="dropdownOffset" class="z-10 hidden bg-white divide-y divide-stone-200 rounded-lg drop-shadow-lg w-44">
+            <div id="dropdownOffset" class="z-10 hidden bg-stone-200 divide-y divide-stone-400 rounded-lg drop-shadow-lg w-44">
                 <div class="px-4 py-3 text-sm xl:text-base text-stone-600">
                   <div class="font-medium truncate">kylewag@me.com</div>
                 </div>
                 <ul class="py-2 text-sm xl:text-base font-medium text-stone-900" aria-labelledby="dropdownDefaultButton">
                   <li>
-                    <a href="https://wa.me/66803620972" target="_blank" class="block px-4 py-2 hover:bg-stone-200">WhatsApp</a>
+                    <a href="https://wa.me/66803620972" target="_blank" class="block px-4 py-2 hover:bg-stone-300">WhatsApp</a>
                   </li>
                   <li>
-                    <a href="https://t.me/kdwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-200">Telegram</a>
+                    <a href="https://t.me/kdwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-300">Telegram</a>
                   </li>
                   <li>
-                    <a href="https://linkedin.com/in/kyledwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-200">Linkedin</a>
+                    <a href="https://linkedin.com/in/kyledwagner" target="_blank" class="block px-4 py-2 hover:bg-stone-300">Linkedin</a>
                   </li>
                 </ul>
             </div>
@@ -62,8 +65,8 @@
     <div class="flex-wrap w-full md:w-4/5 xl:px-36">
     <div class="CTA load-hidden block text-left text-stone-900 font-bold text-6xl tagline leading-none p-4 md:p-8">I'm a creative director &amp; marketer in Bangkok.</div>
     <button class="Contact load-hidden block p-4 md:p-8">
-      <a href="/about.html" target="_self" class="ease-out duration-200 font-medium text-base px-6 py-3 leading-none rounded-full text-stone-900 bg-stone-200 hover:bg-stone-300">Get to know Kyle
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-stone-900 inline ml-1 -mt-0.5 w-5 h-5">
+      <a href="/about.html" target="_self" class="ease-out duration-200 font-medium text-base px-6 py-3 leading-none rounded-full text-stone-200 bg-stone-800 hover:bg-stone-700">Get to know Kyle
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-stone-200 inline ml-1 -mt-0.5 w-5 h-5">
           <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
         </svg>        
       </a>  
@@ -75,17 +78,17 @@
 
 <!-- Amazing People -->
 <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-  <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+  <div class="h-full card load-hidden bg-none border-b border-stone-200">
     <video class="w-full rounded-t-lg" autoplay muted loop playsinline>
       <source src="assets/images/work/cover/AmazingPeople_Cover.webm" type="video/webm">
       <!-- Fallback image in case video doesn't load -->
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/AmazingPeople_Cover.jpg" alt="Amazing People Website">
     </video>
     <div class="px-6 py-6">
-      <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">July 2025</span>
-      <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Agency Website</span>
-      <span class="block leading-none font-normal text-md text-stone-500 py-2">Amazing People</span>
-      <span class="block text-md text-stone-900 py-2">Complete design and development of a portfolio website for Amazing People, a production company bridging East and West from LA to Seoul.</span>
+      <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">July 2025</span>
+      <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Agency Website</span>
+      <span class="block leading-none font-normal text-md text-stone-200 py-2">Amazing People</span>
+      <span class="block text-md text-stone-200 py-2">Complete design and development of a portfolio website for Amazing People, a production company bridging East and West from LA to Seoul.</span>
       <div class="py-3">
         <a href="https://amazingpeople.kr/" target="_blank">
           <button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
@@ -102,13 +105,13 @@
 
     <!-- Spoke to a Bloke -->
     <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/Spoke_to_a_Bloke.png" alt="Spoke to a Bloke">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">August 2025</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Film Pitch Deck</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Spoke to a Bloke</span>
-          <span class="block text-md text-stone-900 py-2">Creative direction, design and full layout of a film pitch deck titled <em>Spoke to a Bloke</em>, addressing the growing issue of men’s mental health in Australia and the world.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">August 2025</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Film Pitch Deck</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Spoke to a Bloke</span>
+          <span class="block text-md text-stone-200 py-2">Creative direction, design and full layout of a film pitch deck titled <em>Spoke to a Bloke</em>, addressing the growing issue of men’s mental health in Australia and the world.</span>
           <div class="py-3"><a href="/assets/docs/GTM_SPOKE_TO_A_BLOKE_CONCEPT.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -121,7 +124,7 @@
 
     <!-- TCL x BBC -->
     <!-- <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-    <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+    <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Green-thumb-media-cover.jpg" alt="Green Thumb Media">
       <div class="px-6 py-6">
         <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">July 2024</span>
@@ -140,7 +143,7 @@
 
     <!-- Imagine Indonesia -->
     <!-- <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/House-of-fern-cover.jpg" alt="House of Fern">
         <div class="px-6 py-6">
           <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">June 2024</span>
@@ -159,13 +162,13 @@
 
     <!-- Green Thumb Media Deck -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-    <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+    <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Green-thumb-media-cover.jpg" alt="Current - Social Club & Kitchen Website">
       <div class="px-6 py-6">
-        <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">April 2024</span>
-        <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Portfolio Deck</span>
-        <span class="block leading-none font-normal text-md text-stone-500 py-2">Green Thumb Media</span>
-        <span class="block text-md text-stone-900 py-2">Desigined a fully modular portfolio presentation for Green Thumb Media, a video production company headquartered in New South Wales, Australia.</span>
+        <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">April 2024</span>
+        <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Portfolio Deck</span>
+        <span class="block leading-none font-normal text-md text-stone-200 py-2">Green Thumb Media</span>
+        <span class="block text-md text-stone-200 py-2">Desigined a fully modular portfolio presentation for Green Thumb Media, a video production company headquartered in New South Wales, Australia.</span>
         <div class="py-3"><a href="/assets/docs/GreenThumbMedia_Portfolio.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
             <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -178,13 +181,13 @@
 
     <!-- House of Fern Pitch Deck -->
     <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/House-of-fern-cover.jpg" alt="House of Fern">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">March 2024</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Agency Pitch Deck</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">House of Fern</span>
-          <span class="block text-md text-stone-900 py-2">Creative direction and full design approach to a pitch deck developed for House of Fern, a creative hospitality agency in Bangkok.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">March 2024</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Agency Pitch Deck</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">House of Fern</span>
+          <span class="block text-md text-stone-200 py-2">Creative direction and full design approach to a pitch deck developed for House of Fern, a creative hospitality agency in Bangkok.</span>
           <div class="py-3"><a href="/assets/docs/House Of Fern_Pitch Deck.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -197,32 +200,26 @@
 
     <!-- Current Website Mini Project -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-    <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+    <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Current_Squarespace_Website.jpg" alt="Current - Social Club & Kitchen Website">
       <div class="px-6 py-6">
-        <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">February 2024</span>
-        <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">F&B Website</span>
-        <span class="block leading-none font-normal text-md text-stone-500 py-2">Current - Social Club & Kitchen</span>
-        <span class="block text-md text-stone-900 py-2">Developed a landing page for an upcoming F&B brand in Bali. Current was concepted to be a curated social space for the new generation of travelers with weekly events and live music.</span>
-        <div class="py-3"><a href="https://letsgetcurrent.com/" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Website
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
-            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
-          </svg>       
-        </button></a>
-      </div>
+        <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">February 2024</span>
+        <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">F&B Website</span>
+        <span class="block leading-none font-normal text-md text-stone-200 py-2">Current - Social Club & Kitchen</span>
+        <span class="block text-md text-stone-200 py-2">Developed a landing page for an upcoming F&B brand in Bali. Current was concepted to be a curated social space for the new generation of travelers with weekly events and live music.</span>      
       </div>
     </div>
     </div>
 
     <!-- Outpost Website -->
     <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/Outpost-website.jpg" alt="Outpost Website">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">2021—2024</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Brand Website</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Outpost</span>
-          <span class="block text-md text-stone-900 py-2">Provided creative direction and lead the content management of Outpost's brand website that included heading the digital strategy for blogs, events, and ad campaigns with analytics.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">2021—2024</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Brand Website</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Outpost</span>
+          <span class="block text-md text-stone-200 py-2">Provided creative direction and lead the content management of Outpost's brand website that included heading the digital strategy for blogs, events, and ad campaigns with analytics.</span>
           <div class="py-3"><a href="https://destinationoutpost.co/" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Website
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -235,13 +232,13 @@
 
     <!-- Citi Presentation -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-    <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+    <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/CITI_Program_Presentation.jpg" alt="ESPN Promo releases">
       <div class="px-6 py-6">
-        <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">August 2023</span>
-        <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Program Presentation</span>
-        <span class="block leading-none font-normal text-md text-stone-500 py-2">Citi</span>
-        <span class="block text-md text-stone-900 py-2">Created a simple, structured PowerPoint template for Citi that highlighted their new brand identity. This presentation showcased their successful programs and initiatives over the past year.</span>
+        <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">August 2023</span>
+        <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Program Presentation</span>
+        <span class="block leading-none font-normal text-md text-stone-200 py-2">Citi</span>
+        <span class="block text-md text-stone-200 py-2">Created a simple, structured PowerPoint template for Citi that highlighted their new brand identity. This presentation showcased their successful programs and initiatives over the past year.</span>
         <div class="py-3"><a href="/assets/docs/CITI_Program_Presentation.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
             <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -254,13 +251,13 @@
 
     <!-- DXP Always On Content -->
     <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/DXP_SSC_Always_On_Content_Cover.jpg" alt="Citi Awards Reel">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">June 2023</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Film Pitch Deck</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">DXP</span>
-          <span class="block text-md text-stone-900 py-2">Developed a pitch deck for the production company Double Exposure Productions (DXP). The deck includes short film concepts that aim to elevate Sharjah as a global sustainable city.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">June 2023</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Film Pitch Deck</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">DXP</span>
+          <span class="block text-md text-stone-200 py-2">Developed a pitch deck for the production company Double Exposure Productions (DXP). The deck includes short film concepts that aim to elevate Sharjah as a global sustainable city.</span>
           <div class="py-3"><a href="/assets/docs/DXP_SSC_Always_On_Content.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -273,13 +270,13 @@
 
     <!-- ESPN Promo Reel -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 md:pb-4 lg:pr-8 lg:pb-8 xl:pl-48">
-    <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+    <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/ESPN_Promo_Reel-sm.jpg" alt="ESPN Promo releases">
       <div class="px-6 py-6">
-        <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">January 2023</span>
-        <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Promo Reel</span>
-        <span class="block leading-none font-normal text-md text-stone-500 py-2">ESPN Asia</span>
-        <span class="block text-md text-stone-900 py-2">Designed the graphical layout for ESPN Asia's promo reel in collaboration with STB. The concept was to highlight key sport stories throughout the year in the form of videos and online articles as see on a mobile device.</span>
+        <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">January 2023</span>
+        <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Promo Reel</span>
+        <span class="block leading-none font-normal text-md text-stone-200 py-2">ESPN Asia</span>
+        <span class="block text-md text-stone-200 py-2">Designed the graphical layout for ESPN Asia's promo reel in collaboration with STB. The concept was to highlight key sport stories throughout the year in the form of videos and online articles as see on a mobile device.</span>
         <div class="py-3"><a href="https://drive.google.com/file/d/1ELEEJhc3wYSXTbK5ul1pdw4cb3_o2jgG/view?usp=share_link&usp=embed_facebook" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Film
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
             <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -292,13 +289,13 @@
 
     <!-- Citi Awards Reel -->
     <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pb-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
         <img class="w-full rounded-t-lg" src="assets/images/work/cover/Citi_Awards_Reel-sm.jpg" alt="Citi Awards Reel">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">November 2022</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Awards Reel</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Citi</span>
-          <span class="block text-md text-stone-900 py-2">Developed the video background concept and full layout design showing multiple awards for Citi throughout the years.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">November 2022</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Awards Reel</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Citi</span>
+          <span class="block text-md text-stone-200 py-2">Developed the video background concept and full layout design showing multiple awards for Citi throughout the years.</span>
           <div class="py-3"><a href="https://drive.google.com/file/d/1Z-6l6bJhDEbGqmGzcCnwpVOB5mtaACMb/view?usp=sharing&usp=embed_facebook" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Film
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -311,13 +308,13 @@
 
     <!-- ModernTrain UI Redesign -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 lg:pr-8 lg:py-10 xl:pl-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/GIZ_ModernTrain_UI_Portfolio-sm.jpg" alt="ModernTrain UI Redesign">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">December 2022</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">UI Redesign</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">GIZ</span>
-          <span class="block text-md text-stone-900 py-2">GIZ explored using ModernTrain as a base framework for their Learning Content Management System (LCMS). My role was to help elevate the UI of the system to meet more modern design standards, as well as simplify the UX and main navigation to fit mobile phone screens.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">December 2022</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">UI Redesign</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">GIZ</span>
+          <span class="block text-md text-stone-200 py-2">GIZ explored using ModernTrain as a base framework for their Learning Content Management System (LCMS). My role was to help elevate the UI of the system to meet more modern design standards, as well as simplify the UX and main navigation to fit mobile phone screens.</span>
           <div class="py-3"><button data-modal-target="ModernTrainModal" data-modal-toggle="ModernTrainModal" class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">Expand
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline expand-icon -mr-1.5 ml-1 w-4 h-4">
               <path d="M13.28 7.78l3.22-3.22v2.69a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.69l-3.22 3.22a.75.75 0 001.06 1.06zM2 17.25v-4.5a.75.75 0 011.5 0v2.69l3.22-3.22a.75.75 0 011.06 1.06L4.56 16.5h2.69a.75.75 0 010 1.5h-4.5a.747.747 0 01-.75-.75zM12.22 13.28l3.22 3.22h-2.69a.75.75 0 000 1.5h4.5a.747.747 0 00.75-.75v-4.5a.75.75 0 00-1.5 0v2.69l-3.22-3.22a.75.75 0 10-1.06 1.06zM3.5 4.56l3.22 3.22a.75.75 0 001.06-1.06L4.56 3.5h2.69a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75.75v4.5a.75.75 0 001.5 0V4.56z" />
@@ -343,13 +340,13 @@
 
       <!-- Bike the Grand Prix Track -->
       <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:py-10 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Bike_The_Grand_Prix_ESPNxSTB-sm.jpg" alt="Bike the Grand Prix Track">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">October 2022</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Film Style Frames</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">ESPN Asia x STB</span>
-          <span class="block text-md text-stone-900 py-2">Designed and developed location infographics placed into the 3D space of the film, as well as created the lower third speaker inserts according to ESPN's brand guidelines.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">October 2022</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Film Style Frames</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">ESPN Asia x STB</span>
+          <span class="block text-md text-stone-200 py-2">Designed and developed location infographics placed into the 3D space of the film, as well as created the lower third speaker inserts according to ESPN's brand guidelines.</span>
           <div class="py-3"><a href="https://vimeo.com/741111559" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Film
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -362,13 +359,13 @@
       
      <!-- Film Portfolio Redesign -->
     <div class="w-full py-4 md:w-1/2 md:pr-4 lg:pr-8 lg:pt-8 xl:pl-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/DXP_Portfolio_Cover-sm.jpg" alt="Film Portfolio Redesign">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">September 2022</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Film Portfolio Redesign</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">DXP</span>
-          <span class="block text-md text-stone-900 py-2">A portfolio for Double Exposure Productions (DXP) designed with a modern approach, showcasing the client's key filmmaking style upfront with infographic design and awards featured throughout.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">September 2022</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Film Portfolio Redesign</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">DXP</span>
+          <span class="block text-md text-stone-200 py-2">A portfolio for Double Exposure Productions (DXP) designed with a modern approach, showcasing the client's key filmmaking style upfront with infographic design and awards featured throughout.</span>
           <div class="py-3"><a href="/assets/docs/DXP_PORTFOLIO_220922_FULL.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -381,13 +378,13 @@
 
       <!-- Google Display Ads -->
       <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pt-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Outpost_Google_Display_Ads-sm.jpg" alt="Google Display Ads">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">August 2022</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Google Display Ads</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Outpost</span>
-          <span class="block text-md text-stone-900 py-2">Created the concept and layout design for Outpost google display ads for advertising both Bali and our newest Sri Lanka property to major markets around the world.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">August 2022</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Google Display Ads</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Outpost</span>
+          <span class="block text-md text-stone-200 py-2">Created the concept and layout design for Outpost google display ads for advertising both Bali and our newest Sri Lanka property to major markets around the world.</span>
           <div class="py-3"><button data-modal-target="GoogleAdsModal" data-modal-toggle="GoogleAdsModal" class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">Expand
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline expand-icon -mr-1.5 ml-1 w-4 h-4">
               <path d="M13.28 7.78l3.22-3.22v2.69a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.69l-3.22 3.22a.75.75 0 001.06 1.06zM2 17.25v-4.5a.75.75 0 011.5 0v2.69l3.22-3.22a.75.75 0 011.06 1.06L4.56 16.5h2.69a.75.75 0 010 1.5h-4.5a.747.747 0 01-.75-.75zM12.22 13.28l3.22 3.22h-2.69a.75.75 0 000 1.5h4.5a.747.747 0 00.75-.75v-4.5a.75.75 0 00-1.5 0v2.69l-3.22-3.22a.75.75 0 10-1.06 1.06zM3.5 4.56l3.22 3.22a.75.75 0 001.06-1.06L4.56 3.5h2.69a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75.75v4.5a.75.75 0 001.5 0V4.56z" />
@@ -413,13 +410,13 @@
 
       <!-- FarFeatures Title & Speaker Insert Design -->
       <div class="w-full py-4 md:w-1/2 md:pr-4 lg:pr-8 lg:pt-8 xl:pl-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/FarFeatures_Community_Involvement_in_tourism_Cover-sm.jpg" alt="Community Involvement in Tourism">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">December 2021</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Title & Speaker Design</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Far Features & GIZ</span>
-          <span class="block text-md text-stone-900 py-2">This is one of a series of short films produced by Far Features for the atingi Africa educational platform in collaboration with GIZ. My role was to design the film title as well as the speaker inserts.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">December 2021</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Title & Speaker Design</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Far Features & GIZ</span>
+          <span class="block text-md text-stone-200 py-2">This is one of a series of short films produced by Far Features for the atingi Africa educational platform in collaboration with GIZ. My role was to design the film title as well as the speaker inserts.</span>
           <div class="py-3"><a href="https://drive.google.com/file/d/1AHc7O9piaLf76MWhkl1Hgk6lRTiuIY2F/view?usp=sharing" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Film
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -432,13 +429,13 @@
 
       <!-- DXP.ae Full Website Redesign -->
       <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pt-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/DXPae_Wesbite_cover.jpg" alt="Double Exposure Productions Website">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">August 2020</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Website Portfolio Redesign</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Double Exposure Productions</span>
-          <span class="block text-md text-stone-900 py-2">DXP is a company lead by award-winning filmmaker - Ahmed Al Mutawa. My concept for this website was letting his work speak for itself, featuring full-screen videos on all case-study pages. The website was coded by hand using HTML, CSS and JS to achieve seamless transitions, locked page scrolls and engaging mouse-over effects.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">August 2020</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Website Portfolio Redesign</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Double Exposure Productions</span>
+          <span class="block text-md text-stone-200 py-2">DXP is a company lead by award-winning filmmaker - Ahmed Al Mutawa. My concept for this website was letting his work speak for itself, featuring full-screen videos on all case-study pages. The website was coded by hand using HTML, CSS and JS to achieve seamless transitions, locked page scrolls and engaging mouse-over effects.</span>
           <div class="py-3"><a href="https://dxp.ae/" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Website
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -451,13 +448,13 @@
 
       <!-- Luang Prabang Heritage Poster -->
       <div class="w-full py-4 md:w-1/2 md:pr-4 lg:pr-8 lg:pt-8 xl:pl-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Protect-LPB-Heritage-Poster.jpg" alt="Luang Prabang Heritage Poster">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">April 2019</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">UNESCO Heritage Poster</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">GIZ-EU Switch Asia Project</span>
-          <span class="block text-md text-stone-900 py-2">This poster was created in collaboration with GIZ and the local UNESCO office in Luang Prabang to promote heritage protection. Posters are A3 and translated into three languages: Vietnamese, Chinese and Lao.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">April 2019</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">UNESCO Heritage Poster</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">GIZ-EU Switch Asia Project</span>
+          <span class="block text-md text-stone-200 py-2">This poster was created in collaboration with GIZ and the local UNESCO office in Luang Prabang to promote heritage protection. Posters are A3 and translated into three languages: Vietnamese, Chinese and Lao.</span>
           <div class="py-3"><a href="/assets/docs/Protect-Luang-Prabang-Heritage-A3-ENG.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -470,13 +467,13 @@
 
       <!-- Refine Asia Brand Identity -->
       <div class="w-full py-4 md:w-1/2 md:pl-4 lg:pl-8 lg:pt-8 xl:pr-48">
-      <div class="h-full card load-hidden bg-white rounded-lg drop-shadow-2xl">
+      <div class="h-full card load-hidden bg-none border-b border-stone-200">
       <img class="w-full rounded-t-lg" src="assets/images/work/cover/Refine_Asia_Logo.jpg" alt="Luang Prabang Heritage Poster">
         <div class="px-6 py-6">
-          <span class="block font-normal uppercase text-sm text-stone-400 tracking-wide py-1">AUGUST 2018</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-900 py-1">Brand Identity Development</span>
-          <span class="block leading-none font-normal text-md text-stone-500 py-2">Focus Asia Travel</span>
-          <span class="block text-md text-stone-900 py-2">Create a brand identity presentation for the rebranding of a luxury travel company, Refine Asia. This accompanied a redesign of the entire logo including logotype design, brand colours, and elevated typography.</span>
+          <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">AUGUST 2018</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1">Brand Identity Development</span>
+          <span class="block leading-none font-normal text-md text-stone-200 py-2">Focus Asia Travel</span>
+          <span class="block text-md text-stone-200 py-2">Create a brand identity presentation for the rebranding of a luxury travel company, Refine Asia. This accompanied a redesign of the entire logo including logotype design, brand colours, and elevated typography.</span>
           <div class="py-3"><a href="/assets/docs/REFINE_ASIA_BRAND_IDENTITY_2018.pdf" target="_blank"><button class="ease-out duration-200 bg-stone-900 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -490,8 +487,8 @@
   </div>
     <!-- Footer -->
     <div class="p-4 xl:px-36 lg:p-8 mb-5">
-        <p class="inline-block float-left antialiased font-thin text-sm text-stone-900">Kyle Wagner</p>
-        <p class="inline-block float-right antialiased font-thin text-sm text-stone-900">© <script>document.write(new Date().getFullYear())</script></p>
+        <p class="inline-block float-left antialiased font-thin text-sm text-stone-200">Kyle Wagner</p>
+        <p class="inline-block float-right antialiased font-thin text-sm text-stone-200">© <script>document.write(new Date().getFullYear())</script></p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
