@@ -508,79 +508,84 @@
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
     </script>
     <script defer>
-      // First button - Contact button with right arrow
-      const contactButton = document.querySelector('.Contact a');
-      const contactArrow = contactButton.querySelector('svg');
+      // Only run animations on desktop (1024px and up - Tailwind's lg: breakpoint)
+      const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
 
-      contactButton.addEventListener('mouseenter', () => {
-        anime({
-          targets: contactArrow,
-          translateX: 4,
-          duration: 200,
-          easing: 'easeOutCubic'
-        });
-      });
+      if (isDesktop) {
+        // First button - Contact button with right arrow
+        const contactButton = document.querySelector('.Contact a');
+        const contactArrow = contactButton.querySelector('svg');
 
-      contactButton.addEventListener('mouseleave', () => {
-        anime({
-          targets: contactArrow,
-          translateX: 0,
-          duration: 200,
-          easing: 'easeOutCubic'
-        });
-      });
-
-      // ALL upper-right buttons
-      const upperRightButtons = document.querySelectorAll('.upper-right');
-
-      upperRightButtons.forEach(button => {
-        const arrow = button.querySelector('svg');
-
-        button.addEventListener('mouseenter', () => {
+        contactButton.addEventListener('mouseenter', () => {
           anime({
-            targets: arrow,
-            translateX: 5,
-            translateY: -5,
+            targets: contactArrow,
+            translateX: 4,
             duration: 200,
             easing: 'easeOutCubic'
           });
         });
 
-        button.addEventListener('mouseleave', () => {
+        contactButton.addEventListener('mouseleave', () => {
           anime({
-            targets: arrow,
+            targets: contactArrow,
             translateX: 0,
-            translateY: 0,
             duration: 200,
             easing: 'easeOutCubic'
           });
         });
-      });
 
-    // Expand buttons
-    const expandButtons = document.querySelectorAll('.expand');
+        // ALL upper-right buttons
+        const upperRightButtons = document.querySelectorAll('.upper-right');
 
-    expandButtons.forEach(button => {
-      const svg = button.querySelector('svg');
+        upperRightButtons.forEach(button => {
+          const arrow = button.querySelector('svg');
 
-      button.addEventListener('mouseenter', () => {
-        anime({
-          targets: svg,
-          scale: 1.3, // Makes it about 30% larger
-          duration: 200,
-          easing: 'easeOutCubic'
+          button.addEventListener('mouseenter', () => {
+            anime({
+              targets: arrow,
+              translateX: 5,
+              translateY: -5,
+              duration: 200,
+              easing: 'easeOutCubic'
+            });
+          });
+
+          button.addEventListener('mouseleave', () => {
+            anime({
+              targets: arrow,
+              translateX: 0,
+              translateY: 0,
+              duration: 200,
+              easing: 'easeOutCubic'
+            });
+          });
         });
-      });
 
-      button.addEventListener('mouseleave', () => {
-        anime({
-          targets: svg,
-          scale: 1,
-          duration: 200,
-          easing: 'easeOutCubic'
+        // Expand buttons
+        const expandButtons = document.querySelectorAll('.expand');
+
+        expandButtons.forEach(button => {
+          const svg = button.querySelector('svg');
+
+          button.addEventListener('mouseenter', () => {
+            anime({
+              targets: svg,
+              scale: 1.3,
+              duration: 200,
+              easing: 'easeOutCubic'
+            });
+          });
+
+          button.addEventListener('mouseleave', () => {
+            anime({
+              targets: svg,
+              scale: 1,
+              duration: 200,
+              easing: 'easeOutCubic'
+            });
+          });
         });
-      });
-    });
+      }
     </script>
 </body>
 </html>
