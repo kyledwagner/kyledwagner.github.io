@@ -21,6 +21,20 @@ body {
   -webkit-user-select: none;
 }
 
+/* Hero Pencil Handwriting Font */
+@font-face {
+  font-family: "KyleWagner";
+  src: url('/assets/fonts/KyleWagner.woff2') format('woff2'),
+       url('/assets/fonts/KyleWagner.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.font-kyle {
+  font-family: 'KyleWagner', sans-serif;
+}
+
 /* Secondary Pitch Sans Font */
 @font-face {
   font-family: 'Pitch Sans';
