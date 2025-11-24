@@ -28,7 +28,6 @@ body {
        url('/assets/fonts/KyleWagner.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
 }
 
 .font-kyle {
