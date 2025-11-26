@@ -39,7 +39,7 @@
                 <a href="/photography.html" class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-0 md:px-4 py-2 leading-none text-stone-200 hover:text-stone-400 mt-2 md:mt-0">Photography</a>
               </div>
               <button id="dropdownOffsetButton" data-dropdown-toggle="dropdownOffset" data-dropdown-offset-distance="8" data-dropdown-offset-skidding="-31" class="md:pl-2">
-                 <div class="ease-out duration-200 inline-block font-medium text-sm xl:text-base px-6 py-3 leading-none rounded-full md:hover:text-white text-stone-200 bg-stone-800 hover:bg-stone-700">Let's talk</div>
+                 <div class="hidden ease-out duration-200 inline-block font-medium text-sm xl:text-base px-6 py-3 leading-none rounded-full md:hover:text-white text-stone-200 bg-stone-800 hover:bg-stone-700">Let's talk</div>
             </button>
             </div>
             <!-- Dropdown menu -->
@@ -636,6 +636,20 @@
     ScrollReveal().reveal('.CTA', { duration: 1000, delay: 400, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.Contact', { duration: 1000, delay: 800, ease: 'ease-in-out', reset: false, mobile: true });
     ScrollReveal().reveal('.Menu, .Logo', { duration: 1000, delay: 100, ease: 'ease-in-out', origin: 'top', distance: '25px', reset: false, mobile: true });
+    </script>
+    <script defer>
+      // Making let's talk button close if clicked anywhere outside 
+      document.addEventListener("DOMContentLoaded", () => {
+      const toggleBtn = document.getElementById("dropdownOffsetButton");
+      const dropdown = document.getElementById("dropdownOffset");
+
+      document.addEventListener("click", (e) => {
+        // If click is *outside* both button + dropdown, close it
+        if (!toggleBtn.contains(e.target) && !dropdown.contains(e.target)) {
+          dropdown.classList.add("hidden");
+        }
+      });
+    });
     </script>
     <script defer>
       // Only run animations on desktop (1024px and up - Tailwind's lg: breakpoint)
