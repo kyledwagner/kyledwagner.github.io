@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Kyle Wagner | Creative Marketer in Bangkok</title>
+  <title>Kyle Wagner | Creative marketer in Bangkok</title>
   <meta name="description" content="Kyle is a creative director and marketer.">
   <meta name="keywords" content="director, producer, designer, marketing, web designer, web developer, professional">
   <meta name="author" content="Kyle David Wagner">
@@ -83,7 +83,7 @@
         </svg>        
       </a>  
     </button>
-    <!-- <button class="Work hidden md:inline-block">
+    <!-- <button class="Work inline-block">
       <a href="#work" target="_self" class="down-arrow ease-out duration-200 font-medium text-sm px-6 py-3 leading-none rounded-full text-stone-200 bg-stone-800 hover:bg-stone-700">See my work
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-stone-200 inline ml-1 -mr-0.5 -mt-0.5 w-5 h-5">
           <path fill-rule="evenodd" d="M10 3a.75.75 0 01.75.75v10.638l3.96-4.158a.75.75 0 111.08 1.04l-5.25 5.5a.75.75 0 01-1.08 0l-5.25-5.5a.75.75 0 111.08-1.04l3.96 4.158V3.75A.75.75 0 0110 3z" clip-rule="evenodd" />
@@ -93,7 +93,21 @@
     </div>
     </div>
 
-  <div id="work" class="grid grid-cols-1 lg:grid-cols-2 p-4 gap-8 md:px-8 xl:px-36 xl:gap-16 mx-auto">
+  <!-- Services -->
+  <div id="services" class="w-full p-4 md:p-8 xl:p-36 mb-16">
+      <span class="services block leading-none font-semibold text-4xl xl:text-5xl text-stone-200 py-4 font-kyle">SERVICES</span>
+      <span class="services block leading-none font-normal text-lg text-stone-200 py-2 pl-4">+ Website design & development</span>
+      <span class="services block leading-none font-normal text-lg text-stone-200 py-2 pl-4">+ Post-production design</span>
+      <span class="services block leading-none font-normal text-lg text-stone-200 py-2 pl-4">+ Content strategy</span>
+      <span class="services block leading-none font-normal text-lg text-stone-200 py-2 pl-4">+ Copywriting & copyediting</span>
+      <span class="services block leading-none font-normal text-lg text-stone-200 py-2 pl-4">+ Brand identity & visual systems</span>
+  </div>
+
+  <!-- Featured Work -->
+  <div id="work" class="w-full p-4 md:px-8 xl:px-36">
+     <span class="block leading-none font-semibold text-4xl xl:text-5xl text-stone-200 py-1 font-kyle">FEATURED WORK</span>
+  </div>
+  <div class="grid grid-cols-1 lg:grid-cols-2 p-4 gap-8 md:px-8 xl:px-36 xl:gap-16 mx-auto">
 
   <!-- Lenovo x FIFA World Cup -->
   <div class="w-full">
@@ -123,21 +137,25 @@
   </div>
 
   <!-- Audi Revolut F1 Team -->
-    <!-- <div class="w-full">
+    <div class="w-full">
       <div class="h-full card load-hidden bg-none border-b border-stone-600">
-        <img loading="lazy" decoding="async" class="w-full rounded-lg" src="assets/images/work/cover/Minor-Hotels-Home.jpg" alt="Audi Revolut Formula 1 Team Launch">
+        <video class="w-full rounded-lg" autoplay muted loop playsinline>
+          <source src="assets/images/work/cover/ARF1T_Hero_Edit.webm" type="video/webm" data-video="webm">
+          <!-- Fallback image in case video doesn't load -->
+          <img loading="lazy" decoding="async" class="w-full rounded-lg" src="assets/images/work/cover/ARF1T_Kyle_D_Wagner_Mobile_Fallback.jpg" alt="Audi Revolut Formula 1 Team Launch">
+        </video>
         <div class="p-4 md:p-6">
           <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">February—March 2026</span>
           <span class="block leading-none font-semibold text-4xl text-stone-200 py-1 font-kyle">PRODUCER & MOTION DESIGNER</span>
           <span class="block leading-none font-normal text-md text-stone-200 py-2">For Audi Revolut Formula 1 Team</span>
-          <span class="block text-md text-stone-200 py-2">Led the Minor Hotels master brand content strategy, transforming the Bangkok-based hospitality group from B2B-focused to B2C, and overseeing content across 8+ brands and 560+ hotels and resorts for the launch of its unified distribution platform.</span>
+          <span class="block text-md text-stone-200 py-2">Designed motion graphics and digital assets for Audi’s 2026 F1 debut and Revolut’s brand activations at Melbourne’s AFLOAT, alongside post-production editing for a documentary-style film.</span>
         <div class="flex flex-wrap gap-4 pt-3">
-          <button data-modal-target="AudiF1LightboxModal" data-modal-toggle="AudiF1LightboxModal" class="expand ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
+          <!-- <button data-modal-target="AudiF1LightboxModal" data-modal-toggle="AudiF1LightboxModal" class="expand ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
             Expand Stills
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline expand-icon -mr-1.5 ml-1 w-4 h-4">
               <path d="M13.28 7.78l3.22-3.22v2.69a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.69l-3.22 3.22a.75.75 0 001.06 1.06zM2 17.25v-4.5a.75.75 0 011.5 0v2.69l3.22-3.22a.75.75 0 011.06 1.06L4.56 16.5h2.69a.75.75 0 010 1.5h-4.5a.747.747 0 01-.75-.75zM12.22 13.28l3.22 3.22h-2.69a.75.75 0 000 1.5h4.5a.747.747 0 00.75-.75v-4.5a.75.75 0 00-1.5 0v2.69l-3.22-3.22a.75.75 0 10-1.06 1.06zM3.5 4.56l3.22 3.22a.75.75 0 001.06-1.06L4.56 3.5h2.69a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75+.75v4.5a.75.75 0 001.5 0V4.56z" />
             </svg>                 
-          </button>
+          </button> -->
 
         <a href="https://vimeo.com/1175364721" target="_blank">
           <button class="upper-right ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
@@ -150,7 +168,7 @@
       </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <!-- My Pencil Font -->
     <div class="w-full">
@@ -719,6 +737,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script>
     ScrollReveal().reveal('.card', { duration: 1000, ease: 'ease-in-out', origin: 'bottom', distance: '25px', interval: 90, reset: false, mobile: true });
+    ScrollReveal().reveal('.services', { duration: 1000, ease: 'ease-in-out', origin: 'bottom', distance: '25px', interval: 90, reset: false, mobile: true });
     ScrollReveal().reveal('.CTA', { duration: 1000, delay: 800, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.profile', { duration: 1000, delay: 400, ease: 'ease-in-out', origin: 'bottom', distance: '25px', reset: false, mobile: true });
     ScrollReveal().reveal('.Contact', { duration: 2000, delay: 800, ease: 'ease-in-out', reset: false, mobile: true });
