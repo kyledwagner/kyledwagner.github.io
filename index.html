@@ -16,8 +16,9 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js" defer></script>
+  <style>[x-cloak] { display: none !important; }</style>
 </head>
-
 <body class="bg-stone-950 font-pitch">
 
         <!-- Top Nav -->
@@ -154,11 +155,11 @@
           <span class="block leading-none font-normal text-md text-stone-200 py-2">For Audi Revolut Formula 1 Team</span>
           <span class="block text-md text-stone-200 py-2">Designed motion graphics and digital assets for Audi’s 2026 F1 debut and Revolut’s brand activations at Melbourne’s AFLOAT, alongside post-production editing for a documentary-style film.</span>
         <div class="flex flex-wrap gap-4 py-3">
-          <button data-modal-target="AudiF1LightboxModal" data-modal-toggle="AudiF1LightboxModal" class="expand ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
-            Assets Coming Soon
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline expand-icon -mr-1.5 ml-1 w-4 h-4">
+          <button x-data @click="$dispatch('open-video-modal', { index: 0 })" class="expand ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">
+            View Assets
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline expand-icon -mr-1.5 ml-1 w-4 h-4">
               <path d="M13.28 7.78l3.22-3.22v2.69a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.69l-3.22 3.22a.75.75 0 001.06 1.06zM2 17.25v-4.5a.75.75 0 011.5 0v2.69l3.22-3.22a.75.75 0 011.06 1.06L4.56 16.5h2.69a.75.75 0 010 1.5h-4.5a.747.747 0 01-.75-.75zM12.22 13.28l3.22 3.22h-2.69a.75.75 0 000 1.5h4.5a.747.747 0 00.75-.75v-4.5a.75.75 0 00-1.5 0v2.69l-3.22-3.22a.75.75 0 10-1.06 1.06zM3.5 4.56l3.22 3.22a.75.75 0 001.06-1.06L4.56 3.5h2.69a.75.75 0 000-1.5h-4.5a.75.75 0 00-.75+.75v4.5a.75.75 0 001.5 0V4.56z" />
-            </svg>                  -->
+            </svg>                 
           </button>
 
         <a href="https://vimeo.com/1175364721" target="_blank">
@@ -622,7 +623,7 @@
         </video>
         <div class="p-4 md:p-6">
           <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">August 2020</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1 font-kyle">WEBSITE PORTFOLIO REDESIGN + DEVELOPEMNT</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1 font-kyle">WEBSITE PORTFOLIO REDESIGN + DEVELOPMENT</span>
           <span class="block leading-none font-normal text-md text-stone-200 py-2">For Double Exposure Productions</span>
           <span class="block text-md text-stone-200 py-2">DXP is a company lead by award-winning filmmaker - Ahmed Al Mutawa. My concept for this website was letting his work speak for itself, featuring full-screen videos on all case-study pages. The website was coded by hand using HTML, CSS and JS to achieve seamless transitions, locked page scrolls and engaging mouse-over effects.</span>
           <div class="py-3"><a href="https://dxp.ae/" target="_blank"><button class="upper-right ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View Website
@@ -717,9 +718,9 @@
       <img loading="lazy" decoding="async" class="w-full rounded-lg" src="/assets/images/work/cover/TT_Sales_Office.jpg" alt="Tiger Trail's Storefront in downtown Luang Prabang">
         <div class="p-4 md:p-6">
           <span class="block font-normal uppercase text-sm text-stone-200 tracking-wide py-1">December 2015</span>
-          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1 font-kyle">STOREFRONT EXPERIEINCE DESIGN</span>
+          <span class="block leading-none font-semibold text-4xl text-stone-200 py-1 font-kyle">STOREFRONT EXPERIENCE DESIGN</span>
           <span class="block leading-none font-normal text-md text-stone-200 py-2">For Tiger Trail Travel</span>
-          <span class="block text-md text-stone-200 py-2">Visually rebranded the local sales office for Tiger Trail Travel, a destination management company in Luang Prabang, Laos. I also designedd and managed the production of branded logo signs, a tour list sign, a sign for MOTOLAO, and glass door stickers.</span>
+          <span class="block text-md text-stone-200 py-2">Visually rebranded the local sales office for Tiger Trail Travel, a destination management company in Luang Prabang, Laos. I also designed and managed the production of branded logo signs, a tour list sign, a sign for MOTOLAO, and glass door stickers.</span>
           <!-- <div class="py-3"><a href="/assets/docs/Protect-Luang-Prabang-Heritage-A3-ENG.pdf" target="_blank"><button class="upper-right ease-out duration-200 bg-stone-800 hover:bg-stone-700 text-sm uppercase text-white font-medium tracking-wide py-3 px-8 rounded-full">View PDF
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="fill-white inline -mt-0.5 -mr-1.5 w-5 h-5">
               <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd" />
@@ -737,6 +738,180 @@
         <p class="inline-block float-left antialiased font-thin text-sm text-stone-200">Kyle Wagner</p>
         <p class="inline-block float-right antialiased font-thin text-sm text-stone-200">© <script>document.write(new Date().getFullYear())</script></p>
     </div>
+
+  <!-- Video Lightbox Modal for ARF1T -->
+  <div x-data="videoLightbox" @open-video-modal.window="open($event.detail.index)">
+    <template x-teleport="body">
+        <div 
+          x-show="opened" 
+          x-transition:enter="transition ease-out duration-300" 
+          x-transition:enter-start="opacity-0" 
+          x-transition:leave="transition ease-in duration-200" 
+          x-transition:leave-end="opacity-0" 
+          @click="close()" 
+          @touchstart="handleTouchStart($event)" 
+          @touchend="handleTouchEnd($event)" 
+          @keydown.window.escape="close()" 
+          x-effect="opened ? document.body.style.overflow = 'hidden' : document.body.style.overflow = ''" 
+          class="fixed inset-0 z-[99] flex flex-col items-center justify-center bg-black/95 p-4 select-none touch-none" 
+          x-cloak
+        >
+          <div class="relative w-full max-w-5xl flex flex-col items-center" @click.stop>
+            
+            <!-- Top Controls & Video Type Selector Tabs -->
+            <div class="w-full flex items-center justify-between mb-4">
+              <!-- 4 Video Type Switcher -->
+              <!-- <div class="flex flex-wrap gap-2">
+                <template x-for="(video, index) in videos" :key="index">
+                  <button 
+                    @click="selectVideo(index)" 
+                    :class="activeIndex === index ? 'bg-white text-black font-semibold' : 'bg-stone-800 text-stone-300 hover:bg-stone-700'"
+                    class="px-3 py-1.5 rounded-full text-xs font-mono uppercase transition cursor-pointer"
+                    x-text="video.type"
+                  ></button>
+                </template>
+              </div> -->
+
+              <!-- Close Modal Button -->
+              <!-- <button @click="close()" class="text-stone-400 hover:text-white p-2 text-3xl font-light leading-none cursor-pointer" aria-label="Close">&times;</button> -->
+            </div>
+
+            <!-- Video Player Wrapper -->
+            <div class="relative w-full aspect-video bg-black rounded-xl overflow-hidden border border-stone-800 shadow-2xl">
+              
+              <!-- Prev Arrow -->
+              <button 
+                @click="prev()" 
+                class="absolute left-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-white hover:text-black p-3 rounded-full transition cursor-pointer" 
+                aria-label="Previous"
+              >
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+              </button>
+
+              <!-- HTML5 Video Player -->
+              <video x-ref="lightboxVideo" class="w-full h-full object-fill" autoplay muted loop playsinline>
+                Your browser does not support WebM video playback.
+              </video>
+
+              <!-- Next Arrow -->
+              <button 
+                @click="next()" 
+                class="absolute right-4 top-1/2 -translate-y-1/2 z-10 text-white bg-black/50 hover:bg-white hover:text-black p-3 rounded-full transition cursor-pointer" 
+                aria-label="Next"
+              >
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+              </button>
+            </div>
+
+            <!-- Active Video Information -->
+            <div class="w-full mt-3 flex items-center justify-between text-stone-200 font-pitch">
+              <div>
+                <span class="text-xs font-mono uppercase tracking-widest text-stone-400" x-text="currentVideo?.type"></span>
+                <h4 class="text-base md:text-lg font-medium" x-text="currentVideo?.title"></h4>
+              </div>
+              <span class="hidden md:inline text-xs font-mono text-stone-500" x-text="(activeIndex + 1) + ' / ' + videos.length"></span>
+            </div>
+
+          </div>
+        </div>
+      </template>
+  </div>
+  <script>
+    // JS Registration Script
+document.addEventListener('alpine:init', () => {
+  Alpine.data('videoLightbox', () => ({
+    opened: false,
+    activeIndex: 0,
+    touchStartX: 0,
+    touchEndX: 0,
+    touchStartY: 0,
+    touchEndY: 0,
+
+    videos: [
+      {
+        type: 'For Audi Revolut F1 Team',
+        title: 'Main Formula 1 Car Video',
+        webm: 'assets/images/work/cover/ARF1T_MELBOURNE_EVENT_IDENT_01_UPDATE.webm'
+      },
+      {
+        type: 'For Audi Revolut F1 Team',
+        title: 'Grand Prix Event Announcements',
+        webm: 'assets/images/work/cover/ARF1T_EVENT_ANNOUNCEMENTS_01_RACE.webm'
+      },
+      {
+        type: 'For Audi Revolut F1 Team',
+        title: 'Highlights of the Day',
+        webm: 'assets/images/work/cover/ARF1T_AFLOAT_HIGHLIGHTS_OF_THE_DAY_DAY 2.webm'
+      }
+    ],
+
+    get currentVideo() {
+      return this.videos[this.activeIndex];
+    },
+
+    open(index = 0) {
+      this.activeIndex = index;
+      this.opened = true;
+      this.playVideo();
+    },
+
+    close() {
+      this.opened = false;
+      this.pauseVideo();
+    },
+
+    next() {
+      this.activeIndex = (this.activeIndex + 1) % this.videos.length;
+      this.playVideo();
+    },
+
+    prev() {
+      this.activeIndex = (this.activeIndex - 1 + this.videos.length) % this.videos.length;
+      this.playVideo();
+    },
+
+    selectVideo(index) {
+      this.activeIndex = index;
+      this.playVideo();
+    },
+
+    playVideo() {
+      this.$nextTick(() => {
+        const player = this.$refs.lightboxVideo;
+        if (player) {
+          player.src = this.currentVideo.webm;
+          player.load();
+          player.muted = true; // Auto-muted to comply with browser autoplay requirements
+          player.play().catch(err => console.log('Autoplay blocked:', err));
+        }
+      });
+    },
+
+    pauseVideo() {
+      const player = this.$refs.lightboxVideo;
+      if (player) {
+        player.pause();
+      }
+    },
+
+    handleTouchStart(e) {
+      this.touchStartX = e.changedTouches[0].screenX;
+      this.touchStartY = e.changedTouches[0].screenY;
+    },
+
+    handleTouchEnd(e) {
+      this.touchEndX = e.changedTouches[0].screenX;
+      this.touchEndY = e.changedTouches[0].screenY;
+      const deltaX = this.touchEndX - this.touchStartX;
+      const deltaY = Math.abs(this.touchEndY - this.touchStartY);
+
+      if (Math.abs(deltaX) > 50 && Math.abs(deltaX) > deltaY) {
+        deltaX > 0 ? this.prev() : this.next();
+      }
+    }
+  }));
+});
+  </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
     <script>
@@ -796,26 +971,18 @@
       if (isDesktop) {
         // First button - Contact button with right arrow
         const contactButton = document.querySelector('.Contact a');
-        const contactArrow = contactButton.querySelector('svg');
-
-        contactButton.addEventListener('mouseenter', () => {
-          anime({
-            targets: contactArrow,
-            translateX: 7,
-            duration: 200,
-            easing: 'easeOutCubic'
-          });
-        });
-
-        contactButton.addEventListener('mouseleave', () => {
-          anime({
-            targets: contactArrow,
-            translateX: 0,
-            duration: 200,
-            easing: 'easeOutCubic'
-          });
-        });
-        
+        if (contactButton) {
+          const contactArrow = contactButton.querySelector('svg');
+          if (contactArrow) {
+            contactButton.addEventListener('mouseenter', () => {
+              anime({ targets: contactArrow, translateX: 7, duration: 200, easing: 'easeOutCubic' });
+            });
+            contactButton.addEventListener('mouseleave', () => {
+              anime({ targets: contactArrow, translateX: 0, duration: 200, easing: 'easeOutCubic' });
+            });
+          }
+        }
+                
         // ALL DEVICES: animate anything with class "push-right"
         const pushRightItems = document.querySelectorAll('.push-right');
 
