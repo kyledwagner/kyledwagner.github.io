@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/kyledwagner/kyledwagner.github.io#readme",
   "devDependencies": {
-    "tailwindcss": "^1.0.1"
+    "tailwindcss": "^4.2.0"
   },
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.1",
     "https": "^1.0.0",
     "jquery": "^3.5.0",
     "tailwindcss-transitions": "^1.0.4"
