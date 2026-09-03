@@ -28,6 +28,7 @@ body {
        url('/assets/fonts/KyleWagner-V3.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 .font-kyle {
@@ -45,6 +46,7 @@ body {
 
 .font-pitch {
   font-family: 'Pitch Sans', sans-serif;
+  font-display: swap;
 }
 
 /* Fixing Icon Button Alignment */
